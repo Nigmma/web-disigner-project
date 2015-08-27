@@ -1,0 +1,47 @@
+$container-width: 500px;
+$box-width: 100px;
+$box-height: 100px;
+
+body {
+  background-color: #22475E;
+}
+.container {
+  width: $container-width;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 100px auto;
+}
+.box {
+  position: relative;
+  width: $box-width;
+  height: $box-height;
+}
+.box:nth-child(1) {
+  background-color: #F0E797;
+  animation: move 3s 2.25s infinite;
+}
+.box:nth-child(2) {
+  top: -$box-height;
+  background-color: #FF5460;
+  animation: move 3s 1.5s infinite;
+}
+.box:nth-child(3) {
+  top: -$box-height * 2;
+  background-color: #FF9D84;
+  animation: move 3s .75s infinite;
+}
+.box:nth-child(4) {
+  top: -$box-height * 3;
+  background-color: #75B08A;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0%{transform: perspective(400px) translate(0) scale(1) rotateY(0deg);z-index:0;}
+  25%{transform: perspective(400px) translate(($container-width - $box-width)/2) scale(1.5,1.5) rotateY(45deg);z-index:10;}
+  50%{transform: perspective(400px) translate($container-width - $box-width) scale(1) rotateY(0deg);z-index:0;}
+  75%{transform: perspective(400px) translate(($container-width - $box-width)/2) scale(0.5,0.5) rotateY(-45deg);z-index:-10;}
+  100%{transform: perspective(400px) translate(0) scale(1) rotateY(0deg);z-index:0;}
+
+}

@@ -1,0 +1,17 @@
+body,html {margin:0; padding:0; height:100%; width:100%;}
+
+#AFlogo {position: fixed; left:30; top:35; z-index:1;}
+#home {position: fixed; left:165; top:50; z-index:1;}
+#services{position: fixed; left:242; top:50; z-index:1;}
+#menu {position: fixed; left:319; top:50; z-index:1;}
+#contact {position: fixed; left:396; top:50; z-index:1;}
+#navbar {position: fixed;left; top:29.5; z-index:1;}
+#banner2 {position: fixed;right:1;top:-5; z-index:1;}
+#banner3 {position: fixed;top:29; z-index:1;}
+
+.box {display:none; background:url(images/pad1.png);background-repeat:no-repeat;border:solid 2px #999; position:fixed;padding: 10px;  left:30; bottom:160;width: 413px;height:521px; z-index:1; }
+
+.box2 { display:none;background:url(images/pad1.png);background-repeat:no-repeat;border:solid 2px #999; position:fixed;padding: 10px;  left:30; top:160;width: 413px;height:521px; z-index:1; }
+
+.box3 { display:none;background:url(images/pad1.png);background-repeat:no-repeat;border:solid 2px #999; position:fixed;padding: 10px;  left:30; top:160;width: 413px;height:521px; z-index:1; }
+

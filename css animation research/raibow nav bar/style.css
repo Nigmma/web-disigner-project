@@ -1,0 +1,207 @@
+
+	
+#block{
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow:  0px 10px 50px #888888;
+	width:1080px;
+	height:720px;}
+body {
+  color: #FFF;
+  background: white;
+  font-weight: 100;
+  font-family: "Segoe UI", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+#ctnerb{
+	position:absolute;
+	margin:6px;
+	border:2px solid #292fc5;
+	float:left;
+	height:668px;
+	width:458px;
+	-webkit-box-shadow:  0px 2px 10px #888888;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+
+	}
+	#lol{
+		-webkit-transform: perspective( 600px ) rotateY( 0deg );
+		}
+	div#box1 {
+	background: #9DCEFF;
+	width: 400px;
+	height: 200px;
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+}
+#ctner2{
+	position:absolute;
+	margin:7px;
+	border:2px solid #292fc5;
+	float:left;
+	height:auto;
+	width:588px;
+	-webkit-box-shadow:  0px 2px 10px #888888;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	
+	}
+.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+.flip3D > .front{
+	position:absolute;
+	
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	background:#FC0; width:240px; height:200px; border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	
+}
+.flip3D > .back{
+	float:right;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	
+}
+
+
+button {
+margin-top:-50px;
+font-family:;
+text-transform: uppercase;
+
+color:white;
+border: 0px;
+background-color: #292fc5;
+text-decoration: none;
+border-radius: 0px;
+font-size: 16px;
+-webkit-transition: all 0.2s; /* For Safari 3.1 to 6.0 */}
+button:hover{	
+	background-color: white;
+    color:black;
+	height:-40px;
+	}
+
+.flip3D:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );	
+}
+#ctner2-1{
+	position:absolute;
+	display:none;
+	margin:7px;
+	border:2px solid #292fc5;
+	
+	height:195px;
+	width:588px;
+	-webkit-box-shadow:  0px 2px 10px #888888;
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	}
+		
+#ctner3{
+	position:absolute;
+	
+	margin:7px;
+	border:2px solid #292fc5;
+	height:auto;
+	width:588px;
+	-webkit-box-shadow:  0px 2px 10px #888888;
+	
+	}
+
+#logo{
+	width:50px;
+	height:50px;}
+h1 {
+
+  font-size: 2.5em;
+  line-height: 1em;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 0; padding: 0;
+  color: #000;
+  letter-spacing: 0.075em;
+  text-transform: capitalize;
+}
+.chmaster{
+	background: #292fc5;;
+    color:#FFF;
+	width:auto; 
+	}
+.chmaster2{
+	background: black;
+    color:#FFF;
+	width:auto; 
+	}
+nav {
+  position: relative;
+  top: 0.5em;
+  margin: 0 auto;}
+ul {
+	-webkit-box-shadow:  0px 2px 10px #5157e0;
+    background: #292fc5;
+    margin: 0; padding: 0;
+    text-align: center;
+    font-size: 0;
+	color:white;}
+th{
+	  color:black;
+      font-size: 16px;
+      cursor: pointer;
+      line-height: 1.6em;
+      list-style-type: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-sizing: border-box;
+	
+}
+.boxgra{
+	display:none;}
+.boxweb{
+	display:none;}
+.boxvid{
+	
+	display:none;}
+.boxaud{
+	
+	display:none;}
+li {
+		color:WHITE;
+      font-size: 16px;
+      cursor: pointer;
+      line-height: 1.6em;
+      padding: 0 0.6em;
+      margin: 0 0;
+      display: inline-block;
+      list-style-type: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.5s ease-out;
+      box-sizing: border-box;}
+.columninhead {
+    
+    background-color: #999894;
+    border: #ccc352 0px solid;
+    padding: 5px;
+    width: 150;
+    height: 15px;
+    margin: 0.5px;
+	-webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+    transition: all 2s;}
+	
+.columninhead:hover{
+    background-color: #292fc5;;
+    color:#FFF;
+	width:550px; 
+
+}
+  
+    

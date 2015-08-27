@@ -1,0 +1,475 @@
+/*
+ Theme Name: Webkrunk
+ Theme URI: http://wordpress.org/
+ Description: theme for webkrunk
+ Version: 1.6
+ Author: Eric Rowell
+ Author URI: http://www.html5canvastutorials.com/
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* end reset */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  /*background-color: #ddd;*/
+  font-family: "Helvetica Neue", "Arial", "Lucida Grande", "Lucida Sans Unicode", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+}
+
+.demo {
+  width: 580px;
+}
+
+img {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, h4 {
+  padding: 0px;
+  margin: 0px;
+  color: #222;
+  font-family: 'PT Sans', sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a {
+  text-decoration: none;
+  color: #222;
+}
+h1 {
+  font-size: 40px;
+  line-height: 1.1;
+}
+h2 {
+  color: #333;
+  font-size: 28px;
+  line-height: 1.1;
+}
+h3 {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.1;
+}
+h3 a {
+  color: #3D3D3D;
+}
+h4 {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+strong, em {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  margin: 0;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 1px; 
+  font-style: normal;
+}
+
+header {
+  background-color: #222;
+  padding: 15px;
+  min-width: 960px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  height: 58px;
+  overflow: hidden;
+    
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+  
+  -moz-box-shadow:    0 0 10px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow:         0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+  display: inline-block;
+  opacity: 0.8;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition:    all 0.3s ease-in-out;
+  -o-transition:      all 0.3s ease-in-out;
+  transition:         all 0.3s ease-in-out;
+}
+
+#logo:hover {
+  opacity: 1; 
+}
+
+#follow {
+  float: right; 
+  opacity: 0.8;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition:    all 0.3s ease-in-out;
+  -o-transition:      all 0.3s ease-in-out;
+  transition:         all 0.3s ease-in-out;
+}
+
+#follow:hover {
+  opacity: 1; 
+}
+
+#follow a {
+  color: #222; 
+}
+
+
+#page {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */  
+  
+  min-width: 960px;
+  padding-top: 58px;
+}
+
+#leftNav {
+  display: inline-block; 
+  width: 200px;
+  background-color: #444;
+  padding: 10px;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+}
+
+#leftNav li {
+  margin-top: 6px;  
+}
+
+#leftNav .title {
+  color: white;
+  font-size: 18px; 
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+#leftNav .title:first-child {
+  margin-top: 10px;
+}
+
+#leftNav a {
+  padding-left: 10px;
+  color: #ccc;
+  text-decoration: none;  
+  display: inline-block;
+}
+
+#leftNav a:hover {
+  color: white; 
+}
+
+#leftNav li.selected {
+  background-color: #666;
+}
+
+#leftNav li.selected a {
+  color: white;
+}
+
+#leftNav #html5CanvasCheatSheet {
+  margin-top: 10px;
+  opacity: 0.8; 
+  padding: 0;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition:    all 0.3s ease-in-out;
+  -o-transition:      all 0.3s ease-in-out;
+  transition:         all 0.3s ease-in-out;
+}
+
+#leftNav #html5CanvasCheatSheet:hover {
+  opacity: 1; 
+}
+
+#content {
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;         /* OLD - Firefox 19- */
+  -webkit-flex: 1;          /* Chrome */
+  -ms-flex: 1;              /* IE 10 */
+  flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */  
+
+  background-color: white;
+}
+
+#topAd {
+  padding: 10px;
+  text-align: center;
+  background-color: #ebebeb;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+}
+
+#codeAndDemo {
+  border-bottom: 5px solid #ebebeb;
+  
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */  
+}
+
+#codeContainer {
+  border-right: 5px solid #ebebeb;
+  
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;         /* OLD - Firefox 19- */
+  -webkit-flex: 1;          /* Chrome */
+  -ms-flex: 1;              /* IE 10 */
+  flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */  
+}
+
+#demoContainer {
+  /*width: 580px; */
+ width: 50%; 
+ overflow: hidden;
+}
+
+#codeContainer .CodeMirror {
+    font-size: 14px;
+}
+#codeContainer .CodeMirror-scroll {
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#codeContainer .CodeMirror-scroll > div {
+    height: auto;
+    cursor: text;
+}
+#codeContainer .CodeMirror-gutter {
+    background-color: transparent;
+    border-right: 0;
+}
+#codeContainer .CodeMirror-gutter-text {
+    color: gray;
+}
+
+#codeContainer .CodeMirror .cm-comment {
+
+}
+
+#codeContainer {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition:    all 0.5s ease-in-out;
+  -o-transition:      all 0.5s ease-in-out;
+  transition:         all 0.5s ease-in-out;
+    
+  opacity: 0; 
+}
+
+#tutorialTitle {
+  background-color: #ebebeb;
+  color: #444;
+  padding: 0 20px 10px 20px;  
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #555;
+  padding-bottom: 110px;
+}
+
+footer a {
+  color: #555;
+  text-decoration: none;   
+}
+
+footer li {
+  display: inline-block; 
+}
+
+footer .links {
+  margin-top: 20px;  
+}
+
+footer .links a {
+  color: #333;  
+}
+
+footer .links a:before {
+  content: '\2022'; 
+  margin: 0 5px;   
+  color: #aaa;
+}
+
+footer .copyright {
+  margin-top: 20px; 
+}
+
+#next {
+  background-color: #222;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  bottom: -94px;
+  height: 94px; 
+  min-width: 220px;
+  border-radius: 3px 0 0 0;
+  z-index: 99999;
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition:    all 0.3s ease-in-out;
+  -o-transition:      all 0.3s ease-in-out;
+  transition:         all 0.3s ease-in-out;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+  
+  -moz-box-shadow:    0 0 10px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  box-shadow:         0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+#next.initialized {
+  opacity: 0.9;
+  bottom: -12px; 
+}
+
+#next.initialized:hover {
+  opacity: 1;
+  bottom: 0;  
+}
+
+#next .right-arrow {
+  background: url("img/right-arrow.png"); 
+  width: 38px;
+  height: 54px;
+  display: inline-block;
+  float: right;
+}
+
+#next .next-tutorial {
+  color: #6d6d6d;
+  font-family: Pacifico;
+  font-size: 14px; 
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+#next .tutorial {
+  color: white;
+  font-size: 28px;
+  text-decoration: none; 
+  float: left;
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 10px;
+  padding-right: 50px;
+}
+
+#more {
+  margin-top: 20px;
+  
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */   
+}
+
+/* contains further explanation + comments */
+#discussion {
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;         /* OLD - Firefox 19- */
+  -webkit-flex: 1;          /* Chrome */
+  -ms-flex: 1;              /* IE 10 */
+  flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */ 
+}
+
+#explanation {
+  padding: 0 20px 20px 20px;  
+}
+
+#explanation p {
+  margin: 10px 0;
+  line-height: 18px;
+  color: #444; 
+}
+
+#comments {
+  padding: 0 20px; 
+}
+
+#disqus_thread a {
+ color: #333; 
+}
+
+aside {
+  width: 160px;
+  display: inline-block; 
+}
+
+#bsa {
+  text-align: center; 
+}
+
+
+#bsa > div {
+  display: inline-block;
+  width: auto; 
+}
+
+#bsa a {
+  margin: 0 10px; 
+}
+

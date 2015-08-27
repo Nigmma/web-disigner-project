@@ -1,0 +1,31 @@
+.loginreport{
+	position:absolute;
+	right:5px;
+	top:-65px;
+	}
+
+.logpics{
+	float:right;
+	background:#e6ac00;
+	 width: 65px;
+    height: 45px;
+	
+	}
+.logname{
+	float:right;
+	background:#CCC;
+	 width: 70px;
+    height: 45px;	
+	}
+.loginfo{
+	float:right;
+	background:white;
+	 width: 90px;
+    height: 45px;	
+	}
+.logmenu{
+	float:right;
+	background:#666;
+	 width: 70px;
+    height: 45px;	
+	}

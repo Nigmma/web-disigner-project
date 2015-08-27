@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://www.impressivewebs.com/css3-transitions-javascript/ -->
+<html class="no-js" lang="en-US"><!--<![endif]--><head id="www-impressivewebs-com" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta charset="UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	
+	<title>Triggering CSS3 Transitions With JavaScript | Impressive Webs</title>
+	
+	<meta name="title" content="Triggering CSS3 Transitions With JavaScript - Impressive Webs">
+	
+	<meta name="google-site-verification" content="">
+	<meta name="author" content="Louis Lazaris">
+	<meta name="Copyright" content="Copyright Louis Lazaris 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Impressive Webs">
+	<meta name="DC.subject" content="Web design blog">
+	<meta name="DC.creator" content="Louis Lazaris">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="http://www.impressivewebs.com/favicon.ico?v=2013">
+
+	<link rel="apple-touch-icon" href="http://www.impressivewebs.com/apple-touch-icon.png?v=2013">
+	    
+    <link rel="stylesheet" href="http://www.impressivewebs.com/wp-content/themes/iw-2013/style.min.css?ver=1.4.2.6">
+
+	<link href="http://www.impressivewebs.com/feed" title="RSS 2.0" type="application/rss+xml" rel="alternate">
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	
+	
+	
+		<link rel="pingback" href="http://www.impressivewebs.com/xmlrpc.php">
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Impressive Webs » Feed" href="http://www.impressivewebs.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Impressive Webs » Comments Feed" href="http://www.impressivewebs.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Impressive Webs » Triggering CSS3 Transitions With JavaScript Comments Feed" href="http://www.impressivewebs.com/css3-transitions-javascript/feed/">
+<link rel="stylesheet" id="yarppWidgetCss-css" href="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/widget.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-subscriptions-css" href="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css" href="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/widgets.css" type="text/css" media="all">
+<div class="fit-vids-style"><style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script async="" type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/gpt.js"></script><script async="" type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/gpt.js"></script><script type="text/javascript" async="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/ga.js"></script><script async="" type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/gpt.js"></script><script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/jquery.min.js"></script>
+<link rel="prev" title="Screencast Series on HTML5 and CSS3" href="http://www.impressivewebs.com/screencast-series-html5-css3/">
+<link rel="next" title="Why Browsers Aren’t TVs (But We Don’t Care)" href="http://www.impressivewebs.com/browsers-tvs/">
+<link rel="shortlink" href="http://wp.me/p2OIgG-15b">
+	
+<script type="text/javascript">
+	function addHandler(object, event, handler) {
+		if (typeof object.addEventListener != 'undefined') 
+			object.addEventListener(event, handler, false);
+		else
+			if (typeof object.attachEvent != 'undefined')
+				object.attachEvent('on' + event, handler);
+			else 
+				throw 'Incompatible browser';
+	}
+</script>
+
+<script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/jscripts.php"></script> 
+
+<!-- All in One SEO Pack 2.1.7 by Michael Torbert of Semper Fi Web Design[363,413] -->
+<meta name="description" content="At the beginning of this month I wrote a post accompanied by five demo pages that showed that CSS3 transitions could be triggered with a number of different">
+
+<link rel="canonical" href="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/Triggering CSS3 Transitions With JavaScript   Impressive Webs.htm">
+<!-- /all in one seo pack -->
+    
+<script type="text/javascript" async="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/bsa.js"></script><script type="text/javascript" id="_bsap_js_5891570d9f9ed32cc1d70ed57b869484" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/s_5891570d9f9ed32cc1d70ed57b869484.js" async="async"></script><script async="" type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/pubads_impl_42.js"></script><script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/osd.js"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/services.css"><style type="text/css" id="bsa_css">div.bsap_1279066{width:100%;display:block}div.bsap_1279066 a{width:728px}div.bsap_1279066 a img{padding:0}div.bsap_1279066 a em{font-style:normal}div.bsap_1279066 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;max-width:100%;float:left;}div.bsap_1279066 img{border:0;clear:right;}div.bsap_1279066 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}div.bsap_1279066 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1279066 a{line-height:100%}div.bsap_1279066 a.adhere{width:728px;height:90px;line-height:720%}html>body div.bsap_1279066 a.adhere{width:726px;height:88px}div.bsap_1279066 img.s{height:0;width:0}div.bsap_1279066{line-height:9px}div.bsap_1279066 .bsap_adhere2,div.bsap_1279066 iframe{float:left}div.bsap_1279066 .bsap_adhere2 a{height:90px;width:20px;background:url(http://s3.buysellads.com/ac/ah20x90_1.gif) no-repeat 0 0;text-indent:-9999px}div.bsap_1295475{width:100%;display:block}div.bsap_1295475 a{width:300px}div.bsap_1295475 a img{padding:0}div.bsap_1295475 a em{font-style:normal}div.bsap_1295475 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;}div.bsap_1295475 img{border:0;clear:right;}div.bsap_1295475 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}div.bsap_1295475 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1295475 a{line-height:100%}div.bsap_1295475 a.adhere{width:300px;height:125px;line-height:1000%}html>body div.bsap_1295475 a.adhere{width:298px;height:123px}div.bsap_1295475 img.s{height:0;width:0}div.bsap_1295475{line-height:9px}div.bsap_1295475 .bsap_adhere a{height:19px;width:298px;font-size:10px;background:#f1f1f1;border:1px solid #e1e1e1;border-top:none;border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;text-shadow:1px 1px 0 #fff;line-height:16px}.bsap_backfillframe{border:0}div.bsap_1274507{width:100%;display:block}div.bsap_1274507 a{width:300px}div.bsap_1274507 a img{padding:0}div.bsap_1274507 a em{font-style:normal}div.bsap_1274507 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;}div.bsap_1274507 img{border:0;clear:right;}div.bsap_1274507 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}div.bsap_1274507 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1274507 a{line-height:100%}div.bsap_1274507 a.adhere{width:300px;height:250px;line-height:2000%}html>body div.bsap_1274507 a.adhere{width:298px;height:248px}div.bsap_1274507 img.s{height:0;width:0}div.bsap_1274507{line-height:9px}div.bsap_1274507 .bsap_adhere a{height:19px;width:298px;font-size:10px;background:#f1f1f1;border:1px solid #e1e1e1;border-top:none;border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;text-shadow:1px 1px 0 #fff;line-height:16px}.bsap_backfillframe{border:0}div.bsap_1270746{width:100%;display:block}div.bsap_1270746 a{width:300px}div.bsap_1270746 a img{padding:0}div.bsap_1270746 a em{font-style:normal}div.bsap_1270746 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;float:left;}div.bsap_1270746 img{border:0;clear:right;}div.bsap_1270746 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}div.bsap_1270746 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1270746 a{line-height:100%}div.bsap_1270746 a.adhere{width:300px;height:250px;line-height:2000%}html>body div.bsap_1270746 a.adhere{width:298px;height:248px}div.bsap_1270746 img.s{height:0;width:0}div.bsap_1270746{line-height:9px}div.bsap_1270746 .bsap_adhere a{height:19px;width:298px;font-size:10px;background:#f1f1f1;border:1px solid #e1e1e1;border-top:none;border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;text-shadow:1px 1px 0 #fff;line-height:16px}.bsap_backfillframe{border:0}div.bsap_1266617{width:100%;display:block}div.bsap_1266617 a{width:300px}div.bsap_1266617 a img{padding:0}div.bsap_1266617 a em{font-style:normal}div.bsap_1266617 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;}div.bsap_1266617 img{border:0;clear:right;}div.bsap_1266617 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}div.bsap_1266617 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1266617 a{line-height:100%}div.bsap_1266617 a.adhere{width:300px;height:250px;line-height:2000%}html>body div.bsap_1266617 a.adhere{width:298px;height:248px}div.bsap_1266617 img.s{height:0;width:0}div.bsap_1266617{line-height:9px}div.bsap_1266617 .bsap_adhere a{height:19px;width:298px;font-size:10px;background:#f1f1f1;border:1px solid #e1e1e1;border-top:none;border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;text-shadow:1px 1px 0 #fff;line-height:16px}.bsap_backfillframe{border:0}</style></head>
+
+<body class="single single-post postid-4165 single-format-standard">
+
+	<!-- BuySellAds Ad Code -->
+	<script type="text/javascript">
+	(function(){
+	  var bsa = document.createElement('script');
+	     bsa.type = 'text/javascript';
+	     bsa.async = true;
+	     bsa.src = 'http://s3.buysellads.com/ac/bsa.js';
+	  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+	})();
+	</script>
+	<!-- End BuySellAds Ad Code -->
+
+	<header class="header">
+
+		<div class="header-inside globalwidth clearfix">
+
+		<a href="http://www.impressivewebs.com/" title="Impressive Webs Home Page" class="logo-anchor"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/logo.png" width="95" height="95" alt="Impressive Webs" title="Impressive Webs" class="logo"></a>
+
+			<nav class="navbar">
+
+				<ul>
+					<li><a href="http://www.impressivewebs.com/articles/">Articles</a></li>
+					<li class="current"><a href="http://www.impressivewebs.com/tutorials/">Tutorials</a></li>
+					<li><a href="http://www.impressivewebs.com/css-basics/">CSS Basics</a></li>
+					<li><a href="http://www.impressivewebs.com/roundups-resources/">Worth A Look</a></li>
+					<li><a href="http://www.impressivewebs.com/css-network/">CSS Network</a></li>
+				</ul>
+
+			</nav><!-- .navbar -->
+
+			<div class="header-ad" id="header-ad">
+				<!-- BuySellAds Zone Code -->
+				<div id="bsap_1295475" class="bsap_1295475 bsap"><iframe width="300" height="125" id="backfill_1295475_frame" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/backfill1.htm" frameborder="0" class="bsap_backfillframe" scrolling="no"></iframe><div class="bsap_adhere"><a href="https://buysellads.com/buy/detail/7834/zone/1295475?utm_source=site_7834&utm_medium=website&utm_campaign=cpmadhere&utm_content=zone_1295475" target="_blank">advertise here</a></div></div>
+				<!-- End BuySellAds Zone Code -->
+			</div><!-- .header-ad -->
+
+		</div><!-- .header-inside -->
+
+	</header>
+	
+	<div class="content globalwidth clearfix">
+		<div class="content-left">
+	        
+                <!-- BuySellAds Zone Code -->
+        <div id="bsap_1279066" class="bsap_1279066 bsap"><div id="backfill_1279066_div"><!--INLINE--><script type="text/javascript" id="auto_1" class="ignoreme">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript" id="auto_2" class="ignoreme">
+googletag.cmd.push(function() {
+googletag.defineSlot('/8691100/impressivewebs_leaderboard_30day_728x90_bsazone_1279066', [728, 90], 'div-gpt-ad-1349458347528-0').addService(googletag.pubads());
+googletag.pubads().set("page_url", "http://www.impressivewebs.com");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<!-- impressivewebs_leaderboard_30day_728x90_bsazone_1279066 -->
+<div id="div-gpt-ad-1349458347528-0" style="width:728px; height:90px;">
+<script type="text/javascript" id="auto_3" class="ignoreme">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1349458347528-0'); });
+</script>
+<div id="google_ads_iframe_/8691100/impressivewebs_leaderboard_30day_728x90_bsazone_1279066_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8691100/impressivewebs_leaderboard_30day_728x90_bsazone_1279066_0" name="google_ads_iframe_/8691100/impressivewebs_leaderboard_30day_728x90_bsazone_1279066_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/8691100/impressivewebs_leaderboard_30day_728x90_bsazone_1279066_0__hidden__" name="google_ads_iframe_/8691100/impressivewebs_leaderboard_30day_728x90_bsazone_1279066_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div></div><div class="bsap_adhere2"><a href="https://buysellads.com/buy/detail/7834/zone/1279066?utm_source=site_7834&utm_medium=website&utm_campaign=cpmadhere&utm_content=zone_1279066" target="_blank">advertise here</a></div></div>
+
+        <!--<a href="http://mediatemple.net#a_aid=52cd974e0a69a&amp;a_bid=edce306f" target="_top" rel="nofollow" style="display: block;"><img src="https://affiliate.mediatemple.net/accounts/default1/banners/728x90.gif" alt="Media Temple Hosting" width="728" height="90" /></a><img style="border:0" src="https://affiliate.mediatemple.net/scripts/imp.php?a_aid=52cd974e0a69a&amp;a_bid=edce306f" width="1" height="1" alt="" />-->
+
+        
+        <!-- End BuySellAds Zone Code -->
+    
+		<article class="post-4165 post type-post status-publish format-standard hentry category-css category-javascript-jquery category-tutorials" id="post-4165">
+
+			            
+            			
+			<h1 class="entry-title">Triggering CSS3 Transitions With JavaScript</h1>
+
+			<div class="entry-content">
+
+				<footer class="meta">
+	<span class="byline author vcard">
+		By <span class="fn">Louis Lazaris</span>
+	</span> on <time datetime="2014-06-24T13:46:03+00:00" pubdate="" class="updated">September 1st, 2011</time> | 
+	<a href="http://www.impressivewebs.com/css3-transitions-javascript/#comments" class="comments-link" title="Comment on Triggering CSS3 Transitions With JavaScript">37 Comments</a></footer>                
+				<p>At the beginning of this month I <a href="http://www.impressivewebs.com/css3-transitions-without-hover/">wrote a post</a> accompanied by five demo pages that showed that CSS3 transitions could be triggered with a number of different events/states in CSS.</p>
+<p>That alone should help you see how these types of simple animations work. But let’s take this a bit further.</p>
+<p>CSS pseudo-classes and media queries (which I used in that other post to trigger the transitions) represent certain states for certain elements. These states occur after specific events on the page. So naturally, CSS3 transitions can also be fired using any JavaScript event. Let’s try a simple click event that toggles a class name.</p>
+<p>Here’s the HTML:</p>
+<div class="dp-highlighter"><div class="bar"><div class="tools"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;">view plain</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;CopyToClipboard&#39;,this);return false;" class="displaynone">copy to clipboard</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;" class="displaynone">print</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;">?</a></div></div><ol start="1" class="dp-css"><li class="alt"><span><span>&lt;div&nbsp;class=</span><span class="string">"box"</span><span>&gt;&lt;/div&gt;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>&lt;input&nbsp;type=<span class="string">"button"</span><span>&nbsp;value=</span><span class="string">"Let's&nbsp;Do&nbsp;This&nbsp;Thing"</span><span>&nbsp;id=</span><span class="string">"bt"</span><span>&gt;&nbsp;&nbsp;</span></span></li></ol></div><pre name="code" class="css" style="display: none;">&lt;div class="box"&gt;&lt;/div&gt;
+
+&lt;input type="button" value="Let's Do This Thing" id="bt"&gt;
+</pre>
+<p>So we have a box with a class of “box”, and a button. Let’s add the following jQuery:</p>
+<div class="dp-highlighter"><div class="bar"><div class="tools"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;">view plain</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;CopyToClipboard&#39;,this);return false;" class="displaynone">copy to clipboard</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;" class="displaynone">print</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;">?</a></div></div><ol start="1" class="dp-c"><li class="alt"><span><span>$(</span><span class="keyword">function</span><span>()&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;$(<span class="string">"#bt"</span><span>).click(</span><span class="keyword">function</span><span>()&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(<span class="string">".box"</span><span>).toggleClass(</span><span class="string">"box-change"</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</span></li><li class="alt"><span>});&nbsp;&nbsp;</span></li></ol></div><pre name="code" class="js" style="display: none;">$(function() {
+	$("#bt").click(function() {
+		$(".box").toggleClass("box-change");
+	});
+});
+</pre>
+<p>This uses jQuery’s <code>.toggleClass</code> method to add or remove the specified class name. So let’s add the CSS:</p>
+<div class="dp-highlighter"><div class="bar"><div class="tools"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;">view plain</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;CopyToClipboard&#39;,this);return false;" class="displaynone">copy to clipboard</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;" class="displaynone">print</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;">?</a></div></div><ol start="1" class="dp-css"><li class="alt"><span><span>.box&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">width</span><span>:&nbsp;</span><span class="string">300px</span><span>;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">height</span><span>:&nbsp;</span><span class="string">300px</span><span>;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transition:&nbsp;<span class="keyword">width</span><span>&nbsp;2s&nbsp;ease,&nbsp;</span><span class="keyword">height</span><span>&nbsp;2s&nbsp;ease;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;-moz-transition:&nbsp;<span class="keyword">width</span><span>&nbsp;2s&nbsp;ease,&nbsp;</span><span class="keyword">height</span><span>&nbsp;2s&nbsp;ease;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;-o-transition:&nbsp;<span class="keyword">width</span><span>&nbsp;2s&nbsp;ease,&nbsp;</span><span class="keyword">height</span><span>&nbsp;2s&nbsp;ease;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;transition:&nbsp;<span class="keyword">width</span><span>&nbsp;2s&nbsp;ease,&nbsp;</span><span class="keyword">height</span><span>&nbsp;2s&nbsp;ease;&nbsp;&nbsp;</span></span></li><li class=""><span>}&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;</span></li><li class=""><span>.box-change&nbsp;{&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">width</span><span>:&nbsp;</span><span class="string">400px</span><span>;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">height</span><span>:&nbsp;</span><span class="string">400px</span><span>;&nbsp;&nbsp;</span></span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li></ol></div><pre name="code" class="css" style="display: none;">.box {
+	width: 300px;
+	height: 300px;
+	-webkit-transition: width 2s ease, height 2s ease;
+	-moz-transition: width 2s ease, height 2s ease;
+	-o-transition: width 2s ease, height 2s ease;
+	transition: width 2s ease, height 2s ease;
+}
+
+.box-change {
+	width: 400px;
+	height: 400px;
+}
+</pre>
+<p>The transitions are declared on the <code>.box</code> element (using all the necessary vendor prefixes), and they include the use of multiple transitions separated by a comma (in this case transitioning both width and height).</p>
+<p>So when the button is clicked, after the <code>.box-change</code> class is added, this will trigger the transition.</p>
+<p>It’s very similar to what you’d normally do with <code>:hover</code>, or <code>:checked</code>, or media queries, or whatever. But in this case the solution involves JavaScript. Here’s a demo page that shows this simple technique:</p>
+<div class="button_holder">
+<ul class="button">
+<li><a href="http://www.impressivewebs.com/demo-files/transition-javascript" title="View Demo">View Demo</a></li>
+</ul>
+</div>
+<h2>Why Would You Do This?</h2>
+<p>Well, there could be a number of reasons. Maybe you’re using JavaScript in your web page or web app to trigger something, so instead of using jQuery to animate CSS properties, you can leave the simple animations in your CSS, and avoid having those cluttering your scripting. Of course, some people feel animation belongs in JavaScript, not CSS. But for simple animations, I’m starting to agree with what seems to be the majority view — that CSS is the right place for these.</p>
+<p>You could also use <a href="http://modernizr.com/">Modernizr</a> and do something like this:</p>
+<div class="dp-highlighter"><div class="bar"><div class="tools"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;">view plain</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;CopyToClipboard&#39;,this);return false;" class="displaynone">copy to clipboard</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;" class="displaynone">print</a><a href="http://www.impressivewebs.com/css3-transitions-javascript/#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;">?</a></div></div><ol start="1" class="dp-c"><li class="alt"><span><span>$(</span><span class="keyword">function</span><span>()&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;$(<span class="string">"#bt"</span><span>).click(</span><span class="keyword">function</span><span>()&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(Modernizr.csstransitions)&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(<span class="string">".box"</span><span>).toggleClass(</span><span class="string">"box-change"</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="keyword">else</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;do&nbsp;some&nbsp;jQuery-based&nbsp;animations/transitions&nbsp;here</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;for&nbsp;IE&nbsp;6-9</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</span></li><li class="alt"><span>});&nbsp;&nbsp;</span></li></ol></div><pre name="code" class="js" style="display: none;">$(function() {
+
+	$("#bt").click(function() {
+		if (Modernizr.csstransitions) {
+			$(".box").toggleClass("box-change");
+		} else {
+			// do some jQuery-based animations/transitions here
+			// for IE 6-9
+		}
+	});
+});
+</pre>
+<p>So with this code, you’re using Modernizr to detect whether the browser supports transtions, then only trigger them if they are present.</p>
+<h2>For Simple Animations</h2>
+<p>If you’re using more complex animations, then you might have to use <a href="http://www.impressivewebs.com/replace-flash-with-css3-animation/">keyframe-based animations</a> combined with scripting. But for simple fades and slides, you might be able to use JavaScript combined with <a href="http://www.w3.org/TR/css3-transitions/">CSS3 transitions</a> and fork some jQuery for browsers that don’t support them.</p>
+<div class="button_holder">
+<ul class="button">
+<li><a href="http://www.impressivewebs.com/demo-files/transition-javascript" title="View Demo">View Demo</a></li>
+</ul>
+</div>
+<span style="clear:both;display:none;"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/img.php" width="0" height="0" alt="" style="border-style:none;width:0px;height:0px;display:none;"></span>
+				
+				                
+			</div><!-- .entry-content -->
+
+			
+			
+			
+			
+            			<!-- BuySellAds Zone Code -->
+			<div id="bsap_1274507" class="bsap_1274507 bsap"><div id="backfill_1274507_div"><!--INLINE--><script type="text/javascript" id="auto_1" class="ignoreme">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript" id="auto_2" class="ignoreme">
+googletag.cmd.push(function() {
+googletag.defineSlot('/8691100/impressivewebs_posts_bot_BTF_300x250_bsazone_1274507', [300, 250], 'div-gpt-ad-1350518537988-0').addService(googletag.pubads());
+googletag.pubads().set("page_url", "http://www.impressivewebs.com");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<!-- impressivewebs_posts_bot_BTF_300x250_bsazone_1274507 -->
+<div id="div-gpt-ad-1350518537988-0" style="width:300px; height:250px;">
+<script type="text/javascript" id="auto_3" class="ignoreme">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1350518537988-0'); });
+</script>
+<div id="google_ads_iframe_/8691100/impressivewebs_posts_bot_BTF_300x250_bsazone_1274507_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8691100/impressivewebs_posts_bot_BTF_300x250_bsazone_1274507_0" name="google_ads_iframe_/8691100/impressivewebs_posts_bot_BTF_300x250_bsazone_1274507_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="bsap_adhere"><a href="https://buysellads.com/buy/detail/7834/zone/1274507?utm_source=site_7834&utm_medium=website&utm_campaign=cpmadhere&utm_content=zone_1274507" target="_blank">advertise here</a></div></div>
+			<!-- End BuySellAds Zone Code -->
+
+			<p class="toppad"><a href="http://buysellads.com/buy/detail/7834/zone/1274507">Advertise Here</a></p>
+            
+		</article><!-- .post -->
+
+	
+	
+	<h2 id="comments" class="title-alt">37 Responses</h2>
+
+	<!-- <div class="navigation">
+		<div class="next-posts"></div>
+		<div class="prev-posts"></div>
+	</div> -->
+
+	<ol class="commentlist">
+		   <li class="comment even thread-even depth-1" id="li-comment-9791">
+     <div id="comment-9791">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/6e8475182de3c24e7dfa9f925ed41e25" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-6e8475182de3c24e7dfa9f925ed41e25-0">         <cite><a href="http://www.krstatzar.com/" rel="external nofollow" class="url">Vladan Krstic</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-9791">
+	  Sep 2/2011 2:17am</a></div>
+      <p>This is great, I will try it today.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=9791#respond" onclick="return addComment.moveForm(&quot;comment-9791&quot;, &quot;9791&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-9797">
+     <div id="comment-9797">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/3cef7e5c0217157006a0aa450dd2e3a1" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-3cef7e5c0217157006a0aa450dd2e3a1-0">         <cite><a href="http://www.isshgraphicsart.com/" rel="external nofollow" class="url">Ishaan k</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-9797">
+	  Sep 2/2011 10:58am</a></div>
+      <p>Thanks, It is working.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=9797#respond" onclick="return addComment.moveForm(&quot;comment-9797&quot;, &quot;9797&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-9801">
+     <div id="comment-9801">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/8081b26e05bb4354f7d65ffc34cbbd67" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-8081b26e05bb4354f7d65ffc34cbbd67-0">         <cite><a href="http://css-tricks.com/" rel="external nofollow" class="url">Chris Coyier</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-9801">
+	  Sep 2/2011 5:31pm</a></div>
+      <p>I’m just gonna say: <strong>this is how I think it should be done.</strong>  If the transition/animation is triggered by an event (like “click” in this article) that part should be handled by JavaScript and the transition/animation should be handled by CSS. Not everything works out that cleanly all the time, but I think that’s the proper separation of concerns.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=9801#respond" onclick="return addComment.moveForm(&quot;comment-9801&quot;, &quot;9801&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment odd alt depth-2" id="li-comment-10124">
+     <div id="comment-10124">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/4569cbe6acf10aed5d07a64f94236f00" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-4569cbe6acf10aed5d07a64f94236f00-0">         <cite><a href="http://chrislachance.com/" rel="external nofollow" class="url">Chris L</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10124">
+	  Sep 15/2011 1:44pm</a></div>
+      <p>Can you explain why? IE still doesn’t support CSS3 transistions, and FF just supported them. Why not use a JS library that can add support cross-browser. One type of function, for one type of language, cross-browser. Am I mistaken?</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10124#respond" onclick="return addComment.moveForm(&quot;comment-10124&quot;, &quot;10124&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-3" id="li-comment-10125">
+     <div id="comment-10125">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-0">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10125">
+	  Sep 15/2011 1:54pm</a></div>
+      <p>Chris isn’t referring to cross-browser support. He’s saying, if you are going to use CSS3 transitions, this is the proper way to separate behaviour from presentation.</p>
+<p>IE10 supports transitions, and FF has supported them since version 4. So yes, if you want cross browser support, then you’ll have to hack around the older versions.</p>
+<p>But you can also use Modernizr to detect support and then use straight JavaScript to do the same thing. Notice in the article, the last heading has a code example of how you would do this.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10125#respond" onclick="return addComment.moveForm(&quot;comment-10125&quot;, &quot;10125&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-9894">
+     <div id="comment-9894">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/9bd4e9127e6218a7d4f116497cdc0406" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-9bd4e9127e6218a7d4f116497cdc0406-0">         <cite><a href="http://www.learncomputer.com/" rel="external nofollow" class="url">Michael Dorf</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-9894">
+	  Sep 9/2011 1:34pm</a></div>
+      <p>Just found your site on Dzone and enjoying the content very much, including this handy CSS3 tutorial! Thanks!</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=9894#respond" onclick="return addComment.moveForm(&quot;comment-9894&quot;, &quot;9894&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-10044">
+     <div id="comment-10044">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/d36c1b1f88e6905664c457141342aef7" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-d36c1b1f88e6905664c457141342aef7-0">         <cite><a href="http://viktorphotography.co.uk/" rel="external nofollow" class="url">Viktor</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10044">
+	  Sep 13/2011 7:16am</a></div>
+      <p>That’s exactly what i was looking for! Thank you!</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10044#respond" onclick="return addComment.moveForm(&quot;comment-10044&quot;, &quot;10044&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-10128">
+     <div id="comment-10128">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b93d06f74287175e1295101dfade66a9" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b93d06f74287175e1295101dfade66a9-0">         <cite>meo</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10128">
+	  Sep 15/2011 2:59pm</a></div>
+      <p>or you could use a plugin that decides for you if the browser can handle CSS3 animations or not.<br>
+I have made an example here: <a href="http://jsfiddle.net/meo/WsR5s/" rel="nofollow">http://jsfiddle.net/meo/WsR5s/</a> i think its more efficient then writing twice the same animation.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10128#respond" onclick="return addComment.moveForm(&quot;comment-10128&quot;, &quot;10128&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-10157">
+     <div id="comment-10157">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b446be3d550c9d7cc37abefe45ed0cb0" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b446be3d550c9d7cc37abefe45ed0cb0-0">         <cite><a href="http://iweballey.com/" rel="external nofollow" class="url">Deepak</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10157">
+	  Sep 16/2011 8:48am</a></div>
+      <p>That’s exactly what i was looking for! Thank you!</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10157#respond" onclick="return addComment.moveForm(&quot;comment-10157&quot;, &quot;10157&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-10270">
+     <div id="comment-10270">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/8de5e6e22892bb8394edecd18fd988ef" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-8de5e6e22892bb8394edecd18fd988ef-0">         <cite><a href="http://www.twitter.com/hkstrongside" rel="external nofollow" class="url">HKstrongside</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10270">
+	  Sep 25/2011 11:43am</a></div>
+      <p>Sweet man, thanks for the tutorial.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10270#respond" onclick="return addComment.moveForm(&quot;comment-10270&quot;, &quot;10270&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment even depth-2" id="li-comment-63759">
+     <div id="comment-63759">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/dd1e77ba31b66cc580b494d61abee207" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-dd1e77ba31b66cc580b494d61abee207-0">         <cite><a href="http://www.logosdesign.in/" rel="external nofollow" class="url">John Weinstein</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-63759">
+	  May 12/2014 11:08am</a></div>
+      <p>Hi Louis,<br>
+You have explained things very well specially in the heading “Why Would You Do This?” that was great and valuable reason. Good Job !!</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=63759#respond" onclick="return addComment.moveForm(&quot;comment-63759&quot;, &quot;63759&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-even depth-1" id="li-comment-10339">
+     <div id="comment-10339">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/18c5e47333b23a9c446a38621ed5f025" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-18c5e47333b23a9c446a38621ed5f025-0">         <cite><a href="http://www.micky2be.com/" rel="external nofollow" class="url">micky2be</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10339">
+	  Oct 1/2011 5:31am</a></div>
+      <p>Why are you using jQuery? Iit’s not like you need it.<br>
+All this ‘almost’ good exemples and tutorial make me think I should start my own technical blog.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10339#respond" onclick="return addComment.moveForm(&quot;comment-10339&quot;, &quot;10339&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-2" id="li-comment-10340">
+     <div id="comment-10340">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-1">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10340">
+	  Oct 1/2011 1:21pm</a></div>
+      <p>It doesn’t matter whether or not it’s “needed” in these particular examples. I could have easily just used pure JavaScript to add/remove the class names. But the fact is, most people building websites nowadays are going to be using a JS library for something. Thus, if they get to a point where they need something simple like this, it will be much less code to use jQuery (or whatever library they’re using; I think my audience prefers jQuery).</p>
+<p>In my opinion, raw JavaScript is not really much of an option any more unless you don’t know the syntax for the library and just find it easier to use raw JS.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10340#respond" onclick="return addComment.moveForm(&quot;comment-10340&quot;, &quot;10340&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment odd alt depth-2" id="li-comment-36661">
+     <div id="comment-36661">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/cf3c1f6718213090cedb293e7399e27f" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-cf3c1f6718213090cedb293e7399e27f-0">         <cite>elo</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-36661">
+	  May 27/2013 11:46pm</a></div>
+      <p>Same opinion.</p>
+<p>Why using jquery when it’s simple and standard to use pure javascript ? And no, everybody are not using it !</p>
+<p>This library is too much used nowadays, instead of thinking in real JS.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=36661#respond" onclick="return addComment.moveForm(&quot;comment-36661&quot;, &quot;36661&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-odd thread-alt depth-1" id="li-comment-10663">
+     <div id="comment-10663">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/ae86289f648a6a3d8f15f062a8ad4c2d" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-ae86289f648a6a3d8f15f062a8ad4c2d-0">         <cite><a href="http://kilbeehanson.com/" rel="external nofollow" class="url">ben kilbee</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-10663">
+	  Oct 29/2011 10:06am</a></div>
+      <p>Hi Louis,</p>
+<p>Nice simple tut, thanks for sharing.</p>
+<p>I’m just getting into animating things using CSS (rather than jquery like I usually do). I’m trying to rebuild a simple animation (divs changing size/position etc) that I have working in jquery, into CSS. First immediate problem is that my jquery version used the height of the window (window.innerHeight) to calculate positions. How could I get round this with CSS? Is that possible?</p>
+<p>Thanks again,<br>
+Ben</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=10663#respond" onclick="return addComment.moveForm(&quot;comment-10663&quot;, &quot;10663&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment odd alt depth-2" id="li-comment-18810">
+     <div id="comment-18810">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/99f531ec83a4be7bd4f3337fcdceb5bf" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-99f531ec83a4be7bd4f3337fcdceb5bf-0">         <cite><a href="http://www.moduscreate.com/" rel="external nofollow" class="url">Dave</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-18810">
+	  Feb 8/2012 12:37pm</a></div>
+      <p>No. CSS cannot query the DOM for things such as window height.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=18810#respond" onclick="return addComment.moveForm(&quot;comment-18810&quot;, &quot;18810&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-19858">
+     <div id="comment-19858">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/75b6a404d0256623bcd99e23b9a7a361" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-75b6a404d0256623bcd99e23b9a7a361-0">         <cite>Cupidvogel</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-19858">
+	  Mar 24/2012 4:17pm</a></div>
+      <p>The code snippets used in this page have a way of stylized display which is seen in many sites, including Mozilla Developer’s Network and Dreamincode. Is there an open-source css template available for this style?</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=19858#respond" onclick="return addComment.moveForm(&quot;comment-19858&quot;, &quot;19858&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor odd alt depth-2" id="li-comment-19860">
+     <div id="comment-19860">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-2">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-19860">
+	  Mar 24/2012 4:59pm</a></div>
+      <p>It’s this plugin:</p>
+<p><a href="http://alexgorbatchev.com/SyntaxHighlighter/" rel="nofollow">http://alexgorbatchev.com/SyntaxHighlighter/</a></p>
+<p>Mine is an older version, but it’s basically the same one.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=19860#respond" onclick="return addComment.moveForm(&quot;comment-19860&quot;, &quot;19860&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment even depth-3" id="li-comment-20003">
+     <div id="comment-20003">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/75b6a404d0256623bcd99e23b9a7a361" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-75b6a404d0256623bcd99e23b9a7a361-1">         <cite>Cupidvogel</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20003">
+	  Mar 28/2012 7:15am</a></div>
+      <p>Umm, the page you referred to has pretty similar code snippets, but the alternate lines aren’t banded as they are here. Any remedy?</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=20003#respond" onclick="return addComment.moveForm(&quot;comment-20003&quot;, &quot;20003&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment odd alt depth-3" id="li-comment-20004">
+     <div id="comment-20004">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/75b6a404d0256623bcd99e23b9a7a361" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-75b6a404d0256623bcd99e23b9a7a361-2">         <cite>Cupidvogel</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20004">
+	  Mar 28/2012 7:20am</a></div>
+      <p>Ok ok, I got it, I downloaded the newer version, that’s why the alternate banding wasn’t there. Strange, that is an excellent feature, dunno why the creator disabled it in the later version. But how should I use in my HTML page to generate the style, like enclosing the code section within [code] tags or what?</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=20004#respond" onclick="return addComment.moveForm(&quot;comment-20004&quot;, &quot;20004&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-4" id="li-comment-20034">
+     <div id="comment-20034">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-3">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20034">
+	  Mar 28/2012 2:30pm</a></div>
+      <p>You have to follow his documentation on how to do it. For mine, I have to do this:</p>
+<pre><code>
+&lt;pre name="code" class="js"&gt;
+// code here
+&lt;/pre&gt;
+</code></pre>
+<p>And then the script does the rest. I’ve also made a few aesthetic changes to the tool, and I’m hiding some of the options that I don’t want.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=20034#respond" onclick="return addComment.moveForm(&quot;comment-20034&quot;, &quot;20034&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment odd alt depth-5" id="li-comment-20036">
+     <div id="comment-20036">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/75b6a404d0256623bcd99e23b9a7a361" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-75b6a404d0256623bcd99e23b9a7a361-3">         <cite>Cupidvogel</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20036">
+	  Mar 28/2012 3:30pm</a></div>
+      <p>Thanks a lot. And I noticed t now, the style of nesting comments on this page is cool. But don’t you think that if the level of replying propagates to 4 or 5 layers deep, the last answer will have a very small width to display its contents, to the point that it might be visually ugly?</p>
+      <div class="reply">
+               </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-5" id="li-comment-20037">
+     <div id="comment-20037">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-4">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20037">
+	  Mar 28/2012 3:36pm</a></div>
+      <p>The nesting stops I think at about 3 or 4, so it will basically look how it does now. It still looks bad on mobile though. I’ll have to do something about that, but not sure what.</p>
+      <div class="reply">
+               </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-20038">
+     <div id="comment-20038">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/75b6a404d0256623bcd99e23b9a7a361" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-75b6a404d0256623bcd99e23b9a7a361-4">         <cite>Cupidvogel</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20038">
+	  Mar 28/2012 3:46pm</a></div>
+      <p>Hmmm, your previous posts had a reply option at the bottom, your last post didn’t. May be the nesting indeed stops after 3 or 4 levels (it will be seen once this message is posted!), but then, the consistency is broken. Have you designed the site yourself, or are you using some other tool?</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=20038#respond" onclick="return addComment.moveForm(&quot;comment-20038&quot;, &quot;20038&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-2" id="li-comment-20039">
+     <div id="comment-20039">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-5">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20039">
+	  Mar 28/2012 3:48pm</a></div>
+      <p>Yep, that’s how it works. That’s built into WordPress, and I have the option to choose how many levels deep.</p>
+<p>You can still reply to my last message above by hitting the nearest reply button in that section. It’s not too bad. Some people choose a shorter nesting, which I probably should do too, but this way it’s more definite what is being replied to what.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=20039#respond" onclick="return addComment.moveForm(&quot;comment-20039&quot;, &quot;20039&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-even depth-1" id="li-comment-20040">
+     <div id="comment-20040">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/75b6a404d0256623bcd99e23b9a7a361" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-75b6a404d0256623bcd99e23b9a7a361-5">         <cite>Cupidvogel</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-20040">
+	  Mar 28/2012 3:52pm</a></div>
+      <p>And the nice rounded corners on all the posts (presumably using border-radius, with proprietary prefixes) work fine in Firefox, but won’t work in IE. You can use the resource at <a href="http://www.curvycorners.net/" rel="nofollow">http://www.curvycorners.net</a> to have the same effect.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=20040#respond" onclick="return addComment.moveForm(&quot;comment-20040&quot;, &quot;20040&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment even thread-odd thread-alt depth-1" id="li-comment-21780">
+     <div id="comment-21780">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/6b19be19a9301dbe3a168c530daa4039" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-6b19be19a9301dbe3a168c530daa4039-0">         <cite>Ciantic</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-21780">
+	  Jul 11/2012 8:45am</a></div>
+      <p>This is not novel observation but here goes:</p>
+<p>Most important for me about CSS transitions is possibility for hardware acceleration and frame-skipping. This means lower-powered devices can saw off the frames, and or jump to the very end of the animation instantly.</p>
+<p>Now there is animation timer in JavaScript, but still the browser/device can in theory be optimized to work faster for specific CSS transitions. And older crappy browsers simply don’t support transitions which is perfectly fine, they couldn’t deal with opacity changes anyway.</p>
+<p>I wish there were better API to trigger CSS transitions using JavaScript though.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=21780#respond" onclick="return addComment.moveForm(&quot;comment-21780&quot;, &quot;21780&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-even depth-1" id="li-comment-21818">
+     <div id="comment-21818">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/fee9f2ada0e7c74c5ac98ef92c4a5f7a" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-fee9f2ada0e7c74c5ac98ef92c4a5f7a-0">         <cite>Andrey</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-21818">
+	  Jul 14/2012 2:07am</a></div>
+      <p>Hi everyone.I find your tutorials very very useful.Well,i tried to create the effect from apple site from the searchfield but i stuck when i need to switch the transition effect from right to left in exchange for the normal effect left-right.What should i do?I guess it’s about some kind of script right?I’ve already use it onfocus in order to resize the li-size from menu.I need some help with this.Thanks in advance!</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=21818#respond" onclick="return addComment.moveForm(&quot;comment-21818&quot;, &quot;21818&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-2" id="li-comment-21822">
+     <div id="comment-21822">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-6">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-21822">
+	  Jul 14/2012 3:32pm</a></div>
+      <p>Andrey, you’re going to have to provide a better explanation of what you’re referring to. I don’t know what you’re trying to transition, and which part you’re having trouble with. The “li’? The search field? And if you can provide a link to a demo, that would be good.</p>
+<p>You can create one at jsfiddle.net, jsbin.com, codepen.io, etc.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=21822#respond" onclick="return addComment.moveForm(&quot;comment-21822&quot;, &quot;21822&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-23923">
+     <div id="comment-23923">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/02123fdda645632f6147550f4dc5730e" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-02123fdda645632f6147550f4dc5730e-0">         <cite>Majeed</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-23923">
+	  Sep 11/2012 1:44pm</a></div>
+      <p>I saw something <a href="http://awardwinningfjords.com/2011/05/06/trigger-css3-animations-with-jquery.html" rel="nofollow">AwardWinningFjords.com</a> which was using jQuery to trigger CSS3 Animations in another way using: <b>element.css({ //new stlye })</b></p>
+<pre>$(".elem1").click(function(){ 
+$(".elem2").css({ left: '-1000px' })
+});
+</pre>
+<p>Hope you find it useful :p</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=23923#respond" onclick="return addComment.moveForm(&quot;comment-23923&quot;, &quot;23923&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment even thread-even depth-1" id="li-comment-26338">
+     <div id="comment-26338">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/65620053a865520c73420703c633298c" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-65620053a865520c73420703c633298c-0">         <cite><a href="http://donmisquitta.com/" rel="external nofollow" class="url">Don</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-26338">
+	  Oct 11/2012 8:22pm</a></div>
+      <p>You solved one of my biggest problems!!! Thanks buddy. \/</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=26338#respond" onclick="return addComment.moveForm(&quot;comment-26338&quot;, &quot;26338&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-32831">
+     <div id="comment-32831">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/3cd6029aadd5e0aeff73bb58a4a38298" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-3cd6029aadd5e0aeff73bb58a4a38298-0">         <cite>JacksonFiveIsAlive</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-32831">
+	  Jan 9/2013 1:50pm</a></div>
+      <p>The title of this article really should be: Triggering CSS3 Transitions With jQuery</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=32831#respond" onclick="return addComment.moveForm(&quot;comment-32831&quot;, &quot;32831&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-2" id="li-comment-32832">
+     <div id="comment-32832">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-7">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-32832">
+	  Jan 9/2013 1:52pm</a></div>
+      <p>Maybe… But jQuery is JavaScript. It’s more the concept that’s important, but yeah, you might be right.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=32832#respond" onclick="return addComment.moveForm(&quot;comment-32832&quot;, &quot;32832&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment odd alt thread-even depth-1" id="li-comment-35011">
+     <div id="comment-35011">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/dbb8943fffd9882c936a4f1fdfbea8ac" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-dbb8943fffd9882c936a4f1fdfbea8ac-0">         <cite>Laura</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-35011">
+	  Feb 13/2013 7:22am</a></div>
+      <p>How would you get it to scale from a central point rather than the top corner?</p>
+<p>Cheers</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=35011#respond" onclick="return addComment.moveForm(&quot;comment-35011&quot;, &quot;35011&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment byuser comment-author-impressive-webs bypostauthor even depth-2" id="li-comment-35016">
+     <div id="comment-35016">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/b8eb0184e62e8a6e71a2d1d7be558248" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-b8eb0184e62e8a6e71a2d1d7be558248-8">         <cite><a href="http://www.impressivewebs.com/" rel="external nofollow" class="url">Louis Lazaris</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-35016">
+	  Feb 13/2013 1:49pm</a></div>
+      <p>Use transforms to change the size, and use <a href="http://css3clickchart.com/?prop=transform-origin" rel="nofollow">transform-origin</a> set to “center center”, which I believe is the default, so you wouldn’t have to use transform-origin, just transforms.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=35016#respond" onclick="return addComment.moveForm(&quot;comment-35016&quot;, &quot;35016&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+<ul class="children">
+   <li class="comment odd alt depth-3" id="li-comment-35023">
+     <div id="comment-35023">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/dbb8943fffd9882c936a4f1fdfbea8ac" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-dbb8943fffd9882c936a4f1fdfbea8ac-1">         <cite>Laura</cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-35023">
+	  Feb 14/2013 5:09am</a></div>
+      <p>Thanks Louis I’ll give that a try :)</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=35023#respond" onclick="return addComment.moveForm(&quot;comment-35023&quot;, &quot;35023&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+   <li class="comment even thread-odd thread-alt depth-1" id="li-comment-37287">
+     <div id="comment-37287">
+      <div class="comment-author vcard">
+         <img alt="" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/177718923a522f685b7cf13a151f7c7b" class="avatar avatar-48 photo grav-hashed grav-hijack" height="48" width="48" id="grav-177718923a522f685b7cf13a151f7c7b-0">         <cite><a href="http://www.digitalpod.co.uk/" rel="external nofollow" class="url">Matthew Stapleford</a></cite><span class="says">:</span>      </div>
+            <div class="comment-meta commentmetadata"><a href="http://www.impressivewebs.com/css3-transitions-javascript/#comment-37287">
+	  Jul 25/2013 8:58am</a></div>
+      <p>This works great! I have been playing around with using just CSS, pure JavaScript and jQuery but of all the tests and examples tried nothing works a elegantly as your code Louis. Thank you so much for sharing this, this really has made my day.</p>
+      <div class="reply">
+         <a class="comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/?replytocom=37287#respond" onclick="return addComment.moveForm(&quot;comment-37287&quot;, &quot;37287&quot;, &quot;respond&quot;, &quot;4165&quot;)">Reply</a>      </div>
+     </div>
+</li><!-- #comment-## -->
+	</ol>
+
+	<div class="navigation">
+		<div class="next-posts"></div>
+		<div class="prev-posts"></div>
+	</div>
+	
+ 
+
+<div id="respond" class="respond">
+
+	<h2 class="title-alt">Leave a Reply</h2>
+
+	<p><strong>Comment Rules:</strong> Please use a real name or alias. Keywords are not allowed in the "name" field. If you use keywords, your comment will be deleted, or your name will be replaced with the alias from your email address. No foul language, please. Thank you for cooperating.</p>
+
+	<p><strong>Instructions for code snippets:</strong> Wrap inline code in <code>&lt;code&gt;</code> tags; wrap blocks of code in <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> tags. When you want your HTML to display on the page in a code snippet inside of <code>&lt;code&gt;</code> tags, make sure you use <code>&amp;lt;</code> and <code>&amp;gt;</code> instead of <code>&lt;</code> and <code>&gt;</code>, otherwise your code will be eaten by pink unicorns.</p>
+
+	<div class="cancel-comment-reply">
+		<a rel="nofollow" id="cancel-comment-reply-link" href="http://www.impressivewebs.com/css3-transitions-javascript/#respond" style="display:none;">Click here to cancel reply.</a>	</div>
+
+	
+	<form action="http://www.impressivewebs.com/wp-comments-post.php" method="post" id="commentform" class="commentform">
+
+        <fieldset>
+		<!--<p>You can use these tags: <code>&lt;abbr datetime=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; &lt;em&gt; &lt;pre&gt; &lt;code&gt; &lt;a href=&quot;&quot; title=&quot;&quot;&gt; </code></p>-->
+
+		<div>
+			<label name="comment">Your Comment:</label>
+			<textarea name="comment" id="comment" cols="58" rows="10" tabindex="1"></textarea>
+		</div>
+		
+		
+			<div>
+				<input type="text" name="author" id="author" value="" size="22" class="form-txt" aria-required="true" tabindex="2">
+				<label for="author">Name *</label>
+			</div>
+
+			<div>
+				<input type="text" name="email" id="email" value="" size="22" class="form-txt" aria-required="true" tabindex="3">
+				<label for="email">Mail (will not be published) *</label>
+			</div>
+
+			<div>
+				<input type="text" name="url" id="url" value="" size="22" class="form-txt" tabindex="4">
+				<label for="url">Website</label>
+			</div>
+
+		
+		<div>
+			<input name="submit" type="submit" id="submit" class="submit" value="Submit Comment" tabindex="5">
+			<input type="hidden" name="comment_post_ID" value="4165" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+		<input type="hidden" name="smniodaIjZen" id="smniodaIjZen"></div>
+
+        </fieldset>
+		<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e11af99f1f"></p><noscript>&lt;strong&gt;&lt;u&gt;&lt;font color="red" size="5"&gt;To leave a comment please enable JavaScript in your browser settings!&lt;/font&gt;&lt;/u&gt;&lt;/strong&gt;</noscript><script src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/saved_resource" type="text/javascript"></script><div id="commentPreview"></div><!-- BEGIN: subscribe to comments reloaded --><p><label for="subscribe-reloaded"><input style="width:30px" type="checkbox" name="subscribe-reloaded" id="subscribe-reloaded" value="yes"> Notify me of followup comments via e-mail. You can also <a href="http://www.impressivewebs.com/comment-subscriptions?srp=4165&sra=s">subscribe</a> without commenting.</label></p><!-- END: subscribe to comments reloaded -->	<script type="text/javascript">
+	// <![CDATA[
+	ref2xJS = escape( document[ 'referrer' ] );
+	document.write("<input type='hidden' name='ref2xJS' value='"+ref2xJS+"'>");
+	// ]]>
+	</script>
+    <noscript>&lt;input type="hidden" name="JSONST" value="NS1"&gt;</noscript>
+<input type="hidden" name="ab22758db385697a48642592d08af3ac" value="4958c416e2b67d8718bc18ff2181ab2f">
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/form.js"></script>
+<p style="display: none;"></p>
+	<input type="hidden" id="ak_js" name="ak_js" value="1403753780982"></form>
+
+		
+</div><!-- #respond -->
+
+
+
+		
+	</div><!-- .content-left -->
+	
+<aside class="sidebar">
+
+    		
+		<ul class="subscribe-sb">
+			
+			<li><a href="http://twitter.com/ImpressiveWebs" title="Follow Impressive Webs on Twitter"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/twitter-side.png" alt="Follow Impressive Webs on Twitter" title="Follow Impressive Webs on Twitter" width="33" height="34"></a></li>
+			
+			<li><a href="https://plus.google.com/+LouisLazaris/" title="Add Impressive Webs to your circles on Google+" rel="me"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/gplus-side.png" alt="Add Impressive Webs to your circles on Google+" title="Add Impressive Webs to your circles on Google+" width="33" height="34"></a></li>
+			
+			<li><a href="http://www.impressivewebs.com/feed" title="Get Updates in your RSS Reader"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/rss-side.png" alt="Get Updates in your RSS Reader" title="Get Updates in your RSS Reader" width="34" height="34"></a></li>
+			
+			<li><a href="http://www.youtube.com/user/ImpressiveWebs" title="Subscribe to Impressive Webs on YouTube"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/youtube-side.png" alt="Subscribe to Impressive Webs on YouTube" title="Subscribe to Impressive Webs on YouTube" width="34" height="34"></a></li>
+			
+			<li><a href="http://feedburner.google.com/fb/a/mailverify?uri=ImpressiveWebs&loc=en_US" title="Get Email Notifications for New Posts"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/email-side.png" alt="Get Email Notifications for New Posts" title="Get Email Notifications for New Posts" width="34" height="34"></a></li>
+			
+		</ul>
+
+        <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
+
+    	<form action="http://www.impressivewebs.com/" class="searchform" method="get">
+    <div>
+        <fieldset>
+        <label for="s" class="screen-reader-text">Search for:</label>
+        <input type="text" id="s" name="s" class="searchtxt" placeholder="Search..." tabindex="6">
+        
+        <input type="submit" value="go" class="searchsubmit" tabindex="7">
+        </fieldset>
+    </div>
+</form>
+		<div class="ads">
+
+ 			<div class="top-sb-ad" id="top-sb-ad">
+				<!-- BuySellAds.com Zone Code -->
+				<div id="bsap_1270746" class="bsap_1270746 bsap"><a href="http://stats.buysellads.com/click.go?z=1270746&b=4434520&g=&s=&sw=1680&sh=1050&br=chrome,35,win&r=0.8740615926217288&link=https://www.psd2html.com/order-now.html?utm_source=impressivewebs.com&utm_medium=banner&utm_campaign=responsive" onmouseover="window.status = &#39;https://www.psd2html.com/order-now.html?utm_source=impressivewebs.com&amp;utm_medium=banner&amp;utm_campaign=responsive&#39;; return true;" onmouseout="window.status=&#39;&#39;; return true;" class="ad1 odd" title="PSD2HTML.com" id="bsa_4434520" target="_blank"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/199657-1386081353.jpg" width="300" height="250" alt="PSD2HTML.com"></a></div>
+				<!-- End BuySellAds.com Zone Code -->
+			</div><!-- .top-sb-ad -->
+
+		</div><!-- .ads -->
+
+		<p class="adlink"><a href="http://buysellads.com/buy/detail/7834">Advertise with Impressive Webs</a></p>
+
+		<h3 class="widget-title">Cool Stuff &amp; People I Like</h3>
+		<ul class="blogroll">
+			<li><a href="http://www.456bereastreet.com/" title="Roger Johansson’s blog on web usability and accessibility">456 Berea Street</a></li>
+<li><a href="http://www.abakus.ca/" title="Bookkeeping and Tax Returns for Toronto and area">Abakus Bookkeeping</a></li>
+<li><a href="http://www.awayback.com/" title="Blog of a web and interaction designer">Amrinder Sandhu</a></li>
+<li><a href="http://tympanus.net/codrops/">Codrops</a></li>
+<li><a href="http://csswizardry.com/" title="Harry Roberts’ CSS blog">CSS Wizardry</a></li>
+<li><a href="http://css-tricks.com/" title="Chris Coyier’s web design blog">CSS-Tricks</a></li>
+<li><a href="http://davidwalsh.name/" title="Web Development tips from a JavaScript expert">David Walsh Blog</a></li>
+<li><a href="http://www.standardista.com/">Estelle Weyl</a></li>
+<li><a href="http://grammar.quickanddirtytips.com/" title="Grammar Girl’s Quick and Dirty Tips ™">Grammar Girl</a></li>
+<li><a href="http://www.html5rocks.com/en/" title="Open Web Tutorials">HTML5 Rocks</a></li>
+<li><a href="https://developer.mozilla.org/en/JavaScript" title="JavaScript Reference">JavaScript</a></li>
+<li><a href="http://lea.verou.me/" title="CSS3 tricks and tips">Lea Verou</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API" title="MDN’s API Reference">MDN API Reference</a></li>
+<li><a href="http://net.tutsplus.com/" title="The ultimate web development tutorial site">Nettuts+</a></li>
+<li><a href="http://www.sitepoint.com/" title="Ultimate resource for web design and best practices coding">SitePoint</a></li>
+<li><a href="http://www.smashingmagazine.com/" title="Smashing Magazine">Smashing Magazine</a></li>
+<li><a href="http://www.inmagine.com/" target="_blank">Stock Photos</a></li>
+<li><a href="http://www.webdesignerdepot.com/" title="Web Design Resources and Tutorials">Webdesigner Depot</a></li>
+		</ul>
+        
+        <a href="http://www.123rf.com/?src=impressweb" rel="nofollow"><img src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/123rf-jan.jpg" alt="Stock Photos by 123RF" width="300" height="250" class="fitimg"></a>
+        
+        <h3 class="widget-title">Personal Stuff &amp; Projects</h3>
+        
+        <ul class="blogroll">
+        	<li><a href="http://webtoolsweekly.com/" title="Web Tools Weekly">Web Tools Weekly</a></li>
+            <li><a href="http://cssvalues.com/" title="CSS Values">CSS Values</a></li>
+            <li><a href="http://www.impressivewebs.com/recommended-reading" title="Books I Recommend">Recommended Reading</a></li>
+            <li><a href="http://animationfillcode.com/" title="Animation Fill Code">Animation Fill Code</a></li>
+            <li><a href="http://www.impressivewebs.com/css-basics/" title="CSS for Beginners">CSS for Beginners</a></li>
+            <li><a href="http://html9responsiveboilerstrapjs.com/" title="HTML9 Responsive Boilerstrap js">HTML9 Responsive Boilerstrap js</a></li>
+            <li><a href="http://css3clickchart.com/" title="CSS3 Click Chart">CSS3 Click Chart</a></li>
+            <li><a href="http://www.sitepoint.com/books/htmlcss1/" title="HTML5 &amp; CSS3 for the Real World">HTML5 &amp; CSS3 Book</a></li>
+            <li><a href="https://learnable.com/courses/html5-css3-for-the-real-world-1484" title="HTML5 &amp; CSS3 Screencasts">HTML5 &amp; CSS3 Screencasts</a></li>
+            <li><a href="http://easyhtml5template.com/" title="Easy HTML5 Template">Easy HTML5 Template</a></li>
+            <li><a href="http://interviewsbydesign.com/" title="Interviews by Design">Interviews by Design</a></li>
+        </ul>
+
+		<div class="ads gads" id="mid-sb-ad">
+			<!-- BuySellAds.com Zone Code -->
+			<div id="bsap_1266617" class="bsap_1266617 bsap"><div id="backfill_1266617_div"><!--INLINE--><script type="text/javascript" id="auto_1" class="ignoreme">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript" id="auto_2" class="ignoreme">
+googletag.cmd.push(function() {
+googletag.defineSlot('/8691100/impressivewebs_sidebar_mid_300x250_bsazone_1266617', [300, 250], 'div-gpt-ad-1349458389860-0').addService(googletag.pubads());
+googletag.pubads().set("page_url", "http://www.impressivewebs.com");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<!-- impressivewebs_sidebar_mid_300x250_bsazone_1266617 -->
+<div id="div-gpt-ad-1349458389860-0" style="width:300px; height:250px;">
+<script type="text/javascript" id="auto_3" class="ignoreme">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1349458389860-0'); });
+</script>
+<div id="google_ads_iframe_/8691100/impressivewebs_sidebar_mid_300x250_bsazone_1266617_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8691100/impressivewebs_sidebar_mid_300x250_bsazone_1266617_0" name="google_ads_iframe_/8691100/impressivewebs_sidebar_mid_300x250_bsazone_1266617_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="bsap_adhere"><a href="https://buysellads.com/buy/detail/7834/zone/1266617?utm_source=site_7834&utm_medium=website&utm_campaign=cpmadhere&utm_content=zone_1266617" target="_blank">advertise here</a></div></div>
+			<!-- End BuySellAds.com Zone Code -->
+            <!--<a href="http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=ImpressiveWebs&page=http://marketing.hostgator.com/promo/penny.html" target="_blank" rel="nofollow"><img src="http://cdn.impressivewebs.com/ads/Hostgator-BW-Penny-300x250.jpg"></a>-->
+            <!--<a href="http://mediatemple.net#a_aid=52cd974e0a69a&amp;a_bid=fafd9bb3" target="_top" rel="nofollow"><img src="https://affiliate.mediatemple.net/accounts/default1/banners/300x250-mt-dark.gif" alt="Media Temple Hosting" width="300" height="250" /></a><img style="border:0" src="https://affiliate.mediatemple.net/scripts/imp.php?a_aid=52cd974e0a69a&amp;a_bid=fafd9bb3" width="1" height="1" alt="" />-->
+		</div><!-- .ads -->
+
+	
+</aside><!-- .sidebar -->
+
+<script type="text/javascript">
+function fVLnwiOG937tI() {
+	var o=document.getElementById("smniodaIjZen");
+	o.value="c5tGEcJWIEVB";
+}
+var bZdZtVqHzLN15 = document.getElementById("submit");
+if (bZdZtVqHzLN15) {
+	var cmiqLdJWXX7DG = document.getElementById("smniodaIjZen");
+	var py4p3rM1wSict = bZdZtVqHzLN15.parentNode;
+	py4p3rM1wSict.appendChild(cmiqLdJWXX7DG, bZdZtVqHzLN15);
+	addHandler(bZdZtVqHzLN15, "mousedown", fVLnwiOG937tI);
+	addHandler(bZdZtVqHzLN15, "keypress", fVLnwiOG937tI);
+}
+</script>
+		</div><!-- .content -->
+
+		<footer class="footer source-org vcard copyright">
+
+			<div class="footer-inside globalwidth">
+
+			<h2 class="foot-title"><span>Building &amp; Writing</span></h2>
+
+			<ul class="building">
+
+                <li>
+					<a href="http://webtoolsweekly.com/">
+
+						<h3>Web Tools Weekly</h3>
+
+						<p>A weekly newsletter for front-end developers, with a special focus on tools.</p>
+
+					</a>
+				</li>
+
+				<li>
+					<a href="http://www.sitepoint.com/store/jump-start-css/">
+
+						<h3>Jump Start CSS</h3>
+
+						<p>A beginner's book I authored on CSS, published by SitePoint.</p>
+
+					</a>
+				</li>
+
+				<li class="alt">
+					<a href="http://html9responsiveboilerstrapjs.com/">
+
+						<h3>HTML9 Responsive Boilerstrap js</h3>
+
+						<p>Oh, your head hasn't exploded yet? This should do it.</p>
+
+					</a>
+				</li>
+
+                <li>
+					<a href="http://cssvalues.com/">
+
+						<h3>CSS Values</h3>
+
+						<p>A quick-reference tool to look up values for every CSS property.</p>
+
+					</a>
+				</li>
+
+				<li>
+					<a href="http://css3clickchart.com/">
+
+						<h3>CSS3 Click Chart</h3>
+
+						<p>A reference to view demos, code, tools, and resources for CSS3 features.</p>
+
+					</a>
+				</li>
+
+				<li class="alt">
+					<a href="http://www.sitepoint.com/books/htmlcss1/">
+				
+						<h3>HTML5 &amp; CSS3 for the Real World</h3>
+				
+						<p>The book that I helped co-author along with Estelle Weyl and Alexis Goldstein, published by SitePoint.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="https://learnable.com/courses/html5-css3-for-the-real-world-1484">
+				
+						<h3>Learnable.com</h3>
+				
+						<p>My screencast tutorial series for learnable.com, covering HTML5 &amp; CSS3.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://coding.smashingmagazine.com/author/louis-lazaris/">
+				
+						<h3>Smashing Coding</h3>
+				
+						<p>My author page on Smashing Magazine's coding section.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://www.smashingmagazine.com/author/louis-lazaris/">
+				
+						<h3>Smashing Magazine</h3>
+				
+						<p>Other articles I've written published on Smashing Magazine.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://www.sitepoint.com/author/louis-lazaris1/">
+				
+						<h3>SitePoint</h3>
+				
+						<p>My author page on SitePoint with articles covering HTML5 and CSS3.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://blog.teamtreehouse.com/author/lazaris">
+				
+						<h3>Treehouse Blog</h3>
+				
+						<p>My articles on the Treehouse blog.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://www.webdesignerdepot.com/?s=Louis+Lazaris">
+				
+						<h3>Webdesigner Depot</h3>
+				
+						<p>My articles on Webdesigner Depot via an in-site search.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://easyhtml5template.com/">
+				
+						<h3>Easy HTML5 Template</h3>
+				
+						<p>A simple starting point for your HTML5 projects.</p>
+
+					</a>
+				</li>
+				
+				<li>
+					<a href="http://animationfillcode.com/">
+
+						<h3>Animation Fill Code</h3>
+
+						<p>An online tool to fill in the extra code for CSS3 keyframe animations.</p>
+
+					</a>
+				</li>
+			</ul>
+			
+			<h2 class="foot-title"><span>Mostly Anti-Social</span></h2>
+			
+			<ul class="social">
+
+				<li class="twitter"> 
+					<a href="http://twitter.com/ImpressiveWebs">Impressive Webs on Twitter</a> 
+				</li>
+				
+				<li class="github"> 
+					<a href="https://github.com/impressivewebs">Impressive Webs on GitHub</a> 
+				</li>
+				
+				<li class="youtube"> 
+					<a href="http://www.youtube.com/user/ImpressiveWebs">Impressive Webs on YouTube</a> 
+				</li>
+
+				<li class="googleplus"> 
+					<a a="" href="https://plus.google.com/+LouisLazaris/">Louis Lazaris on Google+</a> 
+				</li>
+
+			</ul>
+
+			<h2 class="foot-title"><span>Credits and Kudos</span></h2>
+
+			<ul class="social halfspace">
+				
+				<li class="bsa"><a href="http://buysellads.com/">BuySellAds.com</a></li>
+				
+				<li class="wp"><a href="http://wordpress.org/">WordPress</a></li>
+				
+				<li class="mt"><a href="http://www.mediatemple.net/#a_aid=52cd974e0a69a">Hosted by Media Temple</a></li>
+				
+				<li class="camtasia"><a href="http://www.techsmith.com/camtasia/">Camtasia Studio</a></li>
+			
+			</ul>
+
+			<h2 class="foot-title"><span>Subscribe et al</span></h2>
+
+			<ul class="subscribe">
+				<li><a href="http://twitter.com/ImpressiveWebs">Twitter Feed</a></li>
+				<li><a href="http://www.impressivewebs.com/feed/">Main RSS Feed</a></li>
+				<li><a href="http://feedburner.google.com/fb/a/mailverify?uri=ImpressiveWebs&loc=en_US">Email Notifications</a></li>
+			</ul>
+
+			<p class="centertext">The articles on here <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">belong to me</a> but <a href="http://creativecommons.org/publicdomain/zero/1.0/">feel free to use</a> any of the code from the articles or tutorials for commercial projects, without attribution.</p>
+
+			<p class="centertext"><small>Copyright © 2008 - 2014 Impressive Webs, Toronto</small></p>
+
+			<p class="centertext"><small><a href="http://buysellads.com/buy/detail/7834">Advertise</a> | <a href="http://www.impressivewebs.com/about">About</a> | <a href="http://www.impressivewebs.com/contact">Contact</a></small></p>
+
+			</div><!-- .footer-inside -->
+
+		</footer>
+
+<script src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/functions.js"></script><script src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/yql"></script>
+
+<!-- Asynchronous google analytics; this is the official snippet.
+	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable. -->
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1965499-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/shCompressed.js"></script>
+<script type="text/javascript">
+dp.SyntaxHighlighter.ClipboardSwf = 'http://www.impressivewebs.com/wp-content/plugins/google-syntax-highlighter/Scripts/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+	<div style="display:none">
+	<div class="grofile-hash-map-6e8475182de3c24e7dfa9f925ed41e25">
+	</div>
+	<div class="grofile-hash-map-3cef7e5c0217157006a0aa450dd2e3a1">
+	</div>
+	<div class="grofile-hash-map-8081b26e05bb4354f7d65ffc34cbbd67">
+	</div>
+	<div class="grofile-hash-map-4569cbe6acf10aed5d07a64f94236f00">
+	</div>
+	<div class="grofile-hash-map-b8eb0184e62e8a6e71a2d1d7be558248">
+	</div>
+	<div class="grofile-hash-map-9bd4e9127e6218a7d4f116497cdc0406">
+	</div>
+	<div class="grofile-hash-map-d36c1b1f88e6905664c457141342aef7">
+	</div>
+	<div class="grofile-hash-map-b93d06f74287175e1295101dfade66a9">
+	</div>
+	<div class="grofile-hash-map-b446be3d550c9d7cc37abefe45ed0cb0">
+	</div>
+	<div class="grofile-hash-map-8de5e6e22892bb8394edecd18fd988ef">
+	</div>
+	<div class="grofile-hash-map-dd1e77ba31b66cc580b494d61abee207">
+	</div>
+	<div class="grofile-hash-map-18c5e47333b23a9c446a38621ed5f025">
+	</div>
+	<div class="grofile-hash-map-cf3c1f6718213090cedb293e7399e27f">
+	</div>
+	<div class="grofile-hash-map-ae86289f648a6a3d8f15f062a8ad4c2d">
+	</div>
+	<div class="grofile-hash-map-99f531ec83a4be7bd4f3337fcdceb5bf">
+	</div>
+	<div class="grofile-hash-map-75b6a404d0256623bcd99e23b9a7a361">
+	</div>
+	<div class="grofile-hash-map-6b19be19a9301dbe3a168c530daa4039">
+	</div>
+	<div class="grofile-hash-map-fee9f2ada0e7c74c5ac98ef92c4a5f7a">
+	</div>
+	<div class="grofile-hash-map-9c5081b5123c87a4b0fa1466d1ed562c">
+	</div>
+	<div class="grofile-hash-map-65620053a865520c73420703c633298c">
+	</div>
+	<div class="grofile-hash-map-3cd6029aadd5e0aeff73bb58a4a38298">
+	</div>
+	<div class="grofile-hash-map-dbb8943fffd9882c936a4f1fdfbea8ac">
+	</div>
+	<div class="grofile-hash-map-177718923a522f685b7cf13a151f7c7b">
+	</div>
+	</div>
+<script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/comment-reply.min.js"></script>
+<script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/devicepx-jetpack.js"></script>
+<script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/wpgroho.js"></script>
+
+	<script src="./Triggering CSS3 Transitions With JavaScript   Impressive Webs_files/e-201426.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.0.2',blog:'41639242',post:'4165',tz:'-4'});
+	var load_cmc = function(){linktracker_init(41639242,4165,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+
+ Served from: www.impressivewebs.com @ 2014-06-24 09:46:03 by W3 Total Cache --><iframe id="google_osd_static_frame_8284341923426" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

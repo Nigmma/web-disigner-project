@@ -1,0 +1,18 @@
+/* Static state */ 
+#container {  width: 400px;  
+height: 400px;  
+position: relative;  
+border: 1px solid #ccc;  } 
+.parent1 {  /* overall animation container */ height: 0;  
+overflow: hidden;  
+transition-property: 
+height; transition-duration: 1s; 
+perspective: 1000px; 
+transform-style: preserve-3d; } 
+.parent2	{  /* full content during animation *can* go here */  } 
+.parent3	{  /* animated, "folded" block */ height: 56px;  
+transition-property: all;  transition-duration: 1s; 
+transform: rotateX(-90deg); transform-origin: top;  } 
+ /* Hover states to trigger animations */ 
+#container:hover .parent1	{  height: 111px;  } 
+#container:hover .parent3	{ transform: rotateX(0deg);  height: 111px;  }

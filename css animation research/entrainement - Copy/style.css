@@ -1,0 +1,13 @@
+
+div {
+    width: 100px;
+    height: 75px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+div#div2 {
+  -ms-transform: skew(40deg,20deg); /* IE 9 */
+    -webkit-transform: skew(30deg,20deg); /* Chrome, Safari, Opera */
+    transform: skew(30deg,20deg); /* Standard syntax */
+}

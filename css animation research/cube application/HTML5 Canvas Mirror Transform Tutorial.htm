@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)http://www.html5canvastutorials.com/advanced/html5-canvas-mirror-transform-tutorial/ -->
+<html><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=0">
+
+<title>HTML5 Canvas Mirror Transform Tutorial  </title>
+
+<link rel="stylesheet" href="./HTML5 Canvas Mirror Transform Tutorial_files/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="http://www.html5canvastutorials.com/libraries/codeMirror/lib/codemirror.css">
+<link rel="pingback" href="http://www.html5canvastutorials.com/xmlrpc.php">
+<link rel="shortcut icon" href="http://www.html5canvastutorials.com/wp-content/themes/webkrunk/favicon.ico">
+<link href="./HTML5 Canvas Mirror Transform Tutorial_files/css" rel="stylesheet" type="text/css">
+
+<link rel="alternate" type="application/rss+xml" title="Html5CanvasTutorials » HTML5 Canvas Mirror Transform Tutorial Comments Feed" href="http://www.html5canvastutorials.com/advanced/html5-canvas-mirror-transform-tutorial/feed/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.html5canvastutorials.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.html5canvastutorials.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="HTML5 Canvas Rotating Plane" href="http://www.html5canvastutorials.com/labs/html5-canvas-rotating-plane/">
+<link rel="next" title="HTML5 Canvas Transformation State Stack Tutorial" href="http://www.html5canvastutorials.com/advanced/html5-canvas-transformation-state-stack-tutorial/">
+<meta name="generator" content="WordPress 3.3.1">
+<link rel="canonical" href="./HTML5 Canvas Mirror Transform Tutorial_files/HTML5 Canvas Mirror Transform Tutorial.htm">
+<link rel="shortlink" href="http://www.html5canvastutorials.com/?p=1959">
+<!-- HeadSpace SEO 3.6.37 by John Godley - urbangiraffe.com -->
+<meta name="description" content="To create a mirror transform using HTML5 Canvas, we can apply a negative scale in the x direction to flip the context horizontally, or we can apply a">
+<!-- HeadSpace -->
+
+<link rel="stylesheet" href="./HTML5 Canvas Mirror Transform Tutorial_files/wp-syntax.css" type="text/css" media="screen">
+
+<script type="text/javascript" async="" src="./HTML5 Canvas Mirror Transform Tutorial_files/ga.js"></script><script async="" type="text/javascript" src="./HTML5 Canvas Mirror Transform Tutorial_files/ca-pub-8154832549041429.js"></script><script id="twitter-wjs" src="./HTML5 Canvas Mirror Transform Tutorial_files/widgets.js"></script><script>console.log(1959);</script>
+
+<script type="text/javascript" async="" src="./HTML5 Canvas Mirror Transform Tutorial_files/embed.js"></script><script type="text/javascript" async="" src="./HTML5 Canvas Mirror Transform Tutorial_files/bsa.js"></script><script type="text/javascript" id="_bsap_js_1247527f7f44b589a96b4b7309b8f7b9" src="./HTML5 Canvas Mirror Transform Tutorial_files/s_1247527f7f44b589a96b4b7309b8f7b9.js" async="async"></script><style type="text/css" id="bsa_css">div.bsap_1260068{width:100%;display:block}div.bsap_1260068 a{width:125px}div.bsap_1260068 a img{padding:0}div.bsap_1260068 a em{font-style:normal}div.bsap_1260068 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0 3px 3px 0;text-align:center;text-decoration:none;overflow:hidden;float:left;}div.bsap_1260068 img{border:0;clear:right;}div.bsap_1260068 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}div.bsap_1260068 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1260068 a{line-height:100%}div.bsap_1260068 a.adhere{width:125px;height:125px;line-height:1000%}html>body div.bsap_1260068 a.adhere{width:123px;height:123px}div.bsap_1260068 img.s{height:0;width:0}</style></head>
+
+
+<body data-twttr-rendered="true">
+<header>
+  <a id="logo" href="http://www.html5canvastutorials.com/">
+    <img src="./HTML5 Canvas Mirror Transform Tutorial_files/logo.png" alt="HTML5 Canvas Tutorials Home">
+  </a>
+  
+  <div id="follow">
+
+    <!-- Twitter -->
+  
+  <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./HTML5 Canvas Mirror Transform Tutorial_files/follow_button.1403226798.htm" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 292px; height: 28px;"></iframe>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  
+
+  </div>
+</header>
+	
+<div id="page">
+  			 
+  <div id="leftNav">
+	<ul>
+
+	
+	              
+              <li class="title">HTML5 Canvas</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-element/">Canvas Element</a>
+          </li>
+          
+                      
+              <li class="title">Lines</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-lines/">Line</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-line-width/">Line Width</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-line-color/">Line Color</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-line-caps/">Line Cap</a>
+          </li>
+          
+                      
+              <li class="title">Curves</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/">Arc</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-quadratic-curves/">Quadratic Curve</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/">Bezier Curve</a>
+          </li>
+          
+                      
+              <li class="title">Paths</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-paths/">Path</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-line-joins/">Line Join</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-rounded-corners/">Rounded Corners</a>
+          </li>
+          
+                      
+              <li class="title">Shapes</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-custom-shapes/">Custom Shape</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-rectangles/">Rectangle</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-circles/">Circle</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-semicircles/">Semicircle</a>
+          </li>
+          
+                      
+              <li class="title">Fill Styles</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-shape-fill/">Color Fill</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-linear-gradients/">Linear Gradient</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-radial-gradients/">Radial Gradient</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-patterns-tutorial/">Pattern</a>
+          </li>
+          
+                      
+              <li class="title">Images</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-images/">Draw Image</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-image-size/">Image Size</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-image-crop/">Image Crop</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-image-loader/">Image Loader</a>
+          </li>
+          
+                      
+              <li class="title">Text</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-text-font-size/">Font, Size &amp; Style</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-text-color/">Text Color</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-text-stroke/">Text Stroke</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-text-align/">Text Align</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-baseline-tutorial/">Text Baseline</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-text-metrics/">Text Metrics</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-wrap-text-tutorial/">Text Wrap</a>
+          </li>
+          
+                      
+              <li class="title">Transformations</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-transform-translate-tutorial/">Translate</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-transform-scale-tutorial/">Scale</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-transform-rotate-tutorial/">Rotate</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-custom-transform/">Custom Transform</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-shear-transform-tutorial/">Shear</a>
+          </li>
+          
+                    
+          <li class="selected">
+            <a href="./HTML5 Canvas Mirror Transform Tutorial_files/HTML5 Canvas Mirror Transform Tutorial.htm">Mirror</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-reset-transform-tutorial/">Reset Transform</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-transformation-state-stack-tutorial/">State Stack</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-ovals/">Oval</a>
+          </li>
+          
+                      
+              <li class="title">Composites</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-shadow-offset-tutorial/">Shadows</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-global-alpha-tutorial/">Global Alpha</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-clipping-region-tutorial/">Clipping Region</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-global-composite-operations-tutorial/">Operations</a>
+          </li>
+          
+                      
+              <li class="title">Image Data &amp; URLs</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-get-image-data-tutorial/">Image Data</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-invert-image-colors-tutorial/">Invert Colors</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-grayscale-image-colors-tutorial/">Grayscale</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-get-image-data-url/">Get Data URL</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-load-image-data-url/">Load Data URL</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-save-drawing-as-an-image/">Save Drawing</a>
+          </li>
+          
+                      
+              <li class="title">Animation</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-clear-canvas/">Clear Canvas</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-animation-stage/">Animation Frames</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-linear-motion-animation/">Linear Motion</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-quadratic-motion-animation/">Acceleration</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-oscillation-animation/">Oscillation</a>
+          </li>
+          
+                    
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-start-and-stop-an-animation/">Start and Stop</a>
+          </li>
+          
+                      
+              <li class="title">Mouse Detection</li>
+            
+                      
+          <li class="">
+            <a href="http://www.html5canvastutorials.com/advanced/html5-canvas-mouse-coordinates/">Mouse Coordinates</a>
+          </li>
+          
+          	  
+	
+	
+  </ul>	
+  <h3 class="title">Canvas Cheat Sheet</h3>
+  <a id="html5CanvasCheatSheet" target="_blank" href="http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/">
+    <img width="180" src="./HTML5 Canvas Mirror Transform Tutorial_files/html5-canvas-cheat-sheet.png" alt="HTML5 Canvas Cheat Sheet">
+  </a>
+  </div>
+
+
+
+
+  
+  <div id="content">
+        <!-- ad header -->
+    <div id="topAd">
+    <div>
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-8154832549041429";
+    /* Html5CanvasTutorials Header */
+    google_ad_slot = "3519107336";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    google_page_url = "www.html5canvastutorials.com/advanced/html5-canvas-mirror-transform-tutorial/";
+    //-->
+    </script>
+    <script type="text/javascript" src="./HTML5 Canvas Mirror Transform Tutorial_files/show_ads.js">
+    </script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+    </div>
+    </div>
+    
+    
+
+
+
+
+  <h1 id="tutorialTitle">HTML5 Canvas Mirror Transform Tutorial</h1>
+
+	<div id="codeAndDemo">
+	  <!--------------------------- CODE --------------------------->
+    <div id="codeContainer" style="opacity: 1;">
+      <textarea id="code" name="code" style="display: none;">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id="myCanvas" width="578" height="200"&gt;&lt;/canvas&gt;
+    &lt;script&gt;
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      // translate context to center of canvas
+      context.translate(canvas.width / 2, canvas.height / 2);
+
+      // flip context horizontally
+      context.scale(-1, 1);
+
+      context.font = '30pt Calibri';
+      context.textAlign = 'center';
+      context.fillStyle = 'blue';
+      context.fillText('Hello World!', 0, 0);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;      </textarea><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.59375px; left: 33.59375px;"><textarea style="position: absolute; padding: 0; width: 1px; height: 1em" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative; height: 418px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-gutter" style="height: 418px;"><div class="CodeMirror-gutter-text"><pre>1</pre><pre>2</pre><pre>3</pre><pre>4</pre><pre>5</pre><pre>6</pre><pre>7</pre><pre>8</pre><pre>9</pre><pre>10</pre><pre>11</pre><pre>12</pre><pre>13</pre><pre>14</pre><pre>15</pre><pre>16</pre><pre>17</pre><pre>18</pre><pre>19</pre><pre>20</pre><pre>21</pre><pre>22</pre><pre>23</pre><pre>24</pre><pre>25</pre><pre>26</pre><pre>27</pre><pre>28</pre><pre>29</pre></div></div><div class="CodeMirror-lines"><div style="position: relative; z-index: 0; outline: none; margin-left: 28px;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden;"></div><pre class="CodeMirror-cursor" style="top: 0px; left: 0px;">&nbsp;</pre><div style="position: relative; z-index: -1; display: none;"></div><div><pre><span class="cm-meta">&lt;!DOCTYPE HTML&gt;</span></pre><pre><span class="cm-tag">&lt;html&gt;</span></pre><pre>  <span class="cm-tag">&lt;head&gt;</span></pre><pre>    <span class="cm-tag">&lt;style&gt;</span></pre><pre>      <span class="cm-tag">body</span> {</pre><pre>        <span class="cm-variable">margin</span>: <span class="cm-number">0px</span>;</pre><pre>        <span class="cm-variable">padding</span>: <span class="cm-number">0px</span>;</pre><pre>      }</pre><pre>    <span class="cm-tag">&lt;/style&gt;</span></pre><pre>  <span class="cm-tag">&lt;/head&gt;</span></pre><pre>  <span class="cm-tag">&lt;body&gt;</span></pre><pre>    <span class="cm-tag">&lt;canvas</span> <span class="cm-attribute">id</span>=<span class="cm-string">"myCanvas"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"578"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"200"</span><span class="cm-tag">&gt;&lt;/canvas&gt;</span></pre><pre>    <span class="cm-tag">&lt;script&gt;</span></pre><pre>      <span class="cm-keyword">var</span> <span class="cm-variable">canvas</span> = <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">'myCanvas'</span>);</pre><pre>      <span class="cm-keyword">var</span> <span class="cm-variable">context</span> = <span class="cm-variable">canvas</span>.<span class="cm-property">getContext</span>(<span class="cm-string">'2d'</span>);</pre><pre> </pre><pre>      <span class="cm-comment">// translate context to center of canvas</span></pre><pre>      <span class="cm-variable">context</span>.<span class="cm-property">translate</span>(<span class="cm-variable">canvas</span>.<span class="cm-property">width</span> / <span class="cm-number">2</span>, <span class="cm-variable">canvas</span>.<span class="cm-property">height</span> / <span class="cm-number">2</span>);</pre><pre> </pre><pre>      <span class="cm-comment">// flip context horizontally</span></pre><pre>      <span class="cm-variable">context</span>.<span class="cm-property">scale</span>(-<span class="cm-number">1</span>, <span class="cm-number">1</span>);</pre><pre> </pre><pre>      <span class="cm-variable">context</span>.<span class="cm-property">font</span> = <span class="cm-string">'30pt Calibri'</span>;</pre><pre>      <span class="cm-variable">context</span>.<span class="cm-property">textAlign</span> = <span class="cm-string">'center'</span>;</pre><pre>      <span class="cm-variable">context</span>.<span class="cm-property">fillStyle</span> = <span class="cm-string">'blue'</span>;</pre><pre>      <span class="cm-variable">context</span>.<span class="cm-property">fillText</span>(<span class="cm-string">'Hello World!'</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>);</pre><pre>    <span class="cm-tag">&lt;/script&gt;</span></pre><pre>  <span class="cm-tag">&lt;/body&gt;</span></pre><pre><span class="cm-tag">&lt;/html&gt;</span>      </pre></div></div></div></div></div></div></div>
+    </div>
+
+    <!--------------------------- DEMO --------------------------->
+    <div id="demoContainer">
+      <iframe id="preview" class="demo" scrolling="no" style="height: 200px;"></iframe>  
+    </div>
+  </div>
+    
+  <script>
+    // set iframe height based on canvas height in the code
+    try {
+      var iframeHeight = 200;
+      
+      if (false) {
+        iframeHeight = 400;
+      }
+      else {
+        var code = document.getElementById('code').value;
+        var regex = /height(=|: )\"?([0-9]{1,4})\"?/;
+        var height = code.match(regex)[2];
+        iframeHeight = parseInt(height);
+      }
+      
+      document.getElementById('preview').style.height = iframeHeight + 'px';
+
+    } catch(e){}
+  </script>
+				
+
+  <!-- code mirror script -->
+  <script type="text/javascript" src="./HTML5 Canvas Mirror Transform Tutorial_files/codeMirror.min.js"></script>
+  <script>
+    document.getElementById('codeContainer').style.opacity = 1;
+  </script>
+
+  <div id="more">
+    <div id="discussion">
+      <div id="explanation">
+        <h2>Discussion</h2>
+        
+                
+        <p>To create a mirror transform using HTML5 Canvas, we can apply a negative scale in the x direction to flip the context horizontally, or we can apply a negative scale in the y direction to flip the context vertically.</p>      </div>
+  
+            
+  
+            <a id="next" href="http://www.html5canvastutorials.com/advanced/html5-canvas-reset-transform-tutorial/" class="initialized">
+        <span class="next-tutorial">Next Tutorial:</span>
+        <span class="tutorial">Reset Transform</span>
+        <span class="right-arrow" role="presentation"></span>
+      </a>
+            
+      <!-- You can start editing here. -->
+<div id="comments">
+<div>
+        <div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" width="100%" src="./HTML5 Canvas Mirror Transform Tutorial_files/saved_resource.htm" scrolling="no" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 771px !important;"></iframe></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'html5canvastutorials'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+        
+    
+</div>    
+</div>
+ 
+    </div>
+    
+    
+<aside>
+  <div id="skyscraperAd">
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-8154832549041429";
+    /* HCT Right Wide */
+    google_ad_slot = "2766712936";
+    google_ad_width = 160;
+    google_ad_height = 600;
+    google_page_url = "/advanced/html5-canvas-mirror-transform-tutorial/";
+    //-->
+    </script>
+    <script type="text/javascript" src="./HTML5 Canvas Mirror Transform Tutorial_files/show_ads.js">
+    </script><ins style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+  </div>
+
+  
+</aside>
+
+    
+  </div>
+
+
+
+
+    <footer>
+      <div id="bsa" class="clearfix">
+        <!-- BuySellAds.com Zone Code -->
+        <div id="bsap_1260068" class="bsap_1260068 bsap"><a href="http://stats.buysellads.com/click.go?z=1260068&b=2993638&g=&s=&sw=1366&sh=768&br=chrome,35,win&r=0.39104212867096066&link=http://www.gojs.net/latest/index.html?utm_source=html5canvastutorials&utm_medium=m125x125&utm_term=canvas&utm_content=white-gojs_lib-tree&utm_campaign=bsa-gojs" onmouseover="window.status = &#39;http://www.gojs.net/latest/index.html?utm_source=html5canvastutorials&amp;utm_medium=m125x125&amp;utm_term=canvas&amp;utm_content=white-gojs_lib-tree&amp;utm_campaign=bsa-gojs&#39;; return true;" onmouseout="window.status=&#39;&#39;; return true;" class="ad1 odd" title="GoJS is a fast and powerful JavaScript library for implementing interactive diagrams in HTML5 Canvas applications." id="bsa_2993638" target="_blank"><img src="./HTML5 Canvas Mirror Transform Tutorial_files/145951-1354892916.png" width="125" height="125" alt="GoJS is a fast and powerful JavaScript library for implementing interactive diagrams in HTML5 Canvas applications."></a><a href="http://stats.buysellads.com/click.go?z=1260068&b=3004739&g=&s=&sw=1366&sh=768&br=chrome,35,win&r=0.8678736824076623&link=http://www.aha-soft.com/iconsets.htm" onmouseover="window.status = &#39;http://www.aha-soft.com/iconsets.htm&#39;; return true;" onmouseout="window.status=&#39;&#39;; return true;" class="ad2 even" title="Professional stock icons" id="bsa_3004739" target="_blank"><img src="./HTML5 Canvas Mirror Transform Tutorial_files/52472-1299102858.png" width="125" height="125" alt="Professional stock icons"></a><a href="https://buysellads.com/buy/detail/56992/zone/1260068?utm_source=site_56992&utm_medium=website&utm_campaign=adhere&utm_content=zone_1260068" title="Advertise Here" class="adhere ad3 odd" target="_blank">Advertise Here</a><a href="https://buysellads.com/buy/detail/56992/zone/1260068?utm_source=site_56992&utm_medium=website&utm_campaign=adhere&utm_content=zone_1260068" title="Advertise Here" class="adhere ad4 even" target="_blank">Advertise Here</a></div>
+        <!-- End BuySellAds.com Zone Code -->
+      </div>
+  
+      <ul class="links">
+        <li><a href="http://www.cheatsheetworld.com/programming/html5-canvas-cheat-sheet/">HTML5 Canvas Cheat Sheet</a></li>
+        <li><a href="http://www.meteorcharts.com/">MeteorCharts</a></li>
+        <li><a href="http://www.html5canvastutorials.com/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="http://www.html5canvastutorials.com/contact/">Contact</a></li>
+      </ul>          
+      <ul class="copyright">
+        © 2014 <a href="http://www.html5canvastutorials.com/">Html5CanvasTutorials</a> All rights reserved
+      </ul>
+    </footer>
+  
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+	// google web master tools
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-10955171-7']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+</script>
+
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds.com Ad Code -->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+
+<script>
+  var next = document.getElementById('next');
+  if (next) {
+    window.onload = function() {
+      setTimeout(function() {
+        next.className = 'initialized';
+      }, 5000);
+    };
+  }
+</script>
+	
+
+
+
+</body></html>
